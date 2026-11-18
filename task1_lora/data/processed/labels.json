@@ -1,0 +1,53 @@
+{
+  "scenarios": [
+    "alarm",
+    "calendar",
+    "weather",
+    "transport"
+  ],
+  "intents": [
+    "alarm_query",
+    "alarm_remove",
+    "alarm_set",
+    "calendar_query",
+    "calendar_remove",
+    "calendar_set",
+    "transport_query",
+    "transport_taxi",
+    "transport_ticket",
+    "transport_traffic",
+    "weather_query"
+  ],
+  "slot_types": [
+    "alarm_type",
+    "app_name",
+    "artist_name",
+    "business_name",
+    "business_type",
+    "currency_name",
+    "date",
+    "device_type",
+    "event_name",
+    "food_type",
+    "general_frequency",
+    "house_place",
+    "list_name",
+    "meal_type",
+    "media_type",
+    "order_type",
+    "person",
+    "personal_info",
+    "place_name",
+    "relation",
+    "song_name",
+    "sport_type",
+    "time",
+    "time_zone",
+    "timeofday",
+    "transport_agency",
+    "transport_descriptor",
+    "transport_name",
+    "transport_type",
+    "weather_descriptor"
+  ]
+}

@@ -1,0 +1,11 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+.env
+
+# Task 1: raw dataset is large and downloadable (see task1_lora/README.md)
+task1_lora/data/raw/
+# Trained adapter weights / checkpoints (too large for git)
+task1_lora/outputs/
