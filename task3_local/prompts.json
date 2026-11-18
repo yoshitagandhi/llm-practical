@@ -1,0 +1,12 @@
+[
+  {"id": 1, "category": "factual", "prompt": "What is the capital of Australia? Answer in one word.", "expected": "Canberra"},
+  {"id": 2, "category": "factual", "prompt": "Who wrote the novel Pride and Prejudice, and in which century was it published?", "expected": "Jane Austen, 19th century (1813)"},
+  {"id": 3, "category": "factual", "prompt": "In two sentences, explain what photosynthesis is.", "expected": "Plants use light, water and CO2 to make glucose and release oxygen; exactly two sentences"},
+  {"id": 4, "category": "reasoning", "prompt": "A shop sells pens at 3 for 20 rupees. How much do 12 pens cost? Show your working briefly.", "expected": "80 rupees (12 / 3 = 4 groups, 4 x 20 = 80)"},
+  {"id": 5, "category": "reasoning", "prompt": "If all bloops are razzies and all razzies are lazzies, are all bloops definitely lazzies? Answer yes or no, then explain in one sentence.", "expected": "Yes, with a correct one-sentence explanation"},
+  {"id": 6, "category": "code", "prompt": "Write a Python function is_palindrome(s) that returns True if s is a palindrome, ignoring case and spaces. Return only the code.", "expected": "Correct function, e.g. normalise with lower() and remove spaces, compare with reverse; code only"},
+  {"id": 7, "category": "code", "prompt": "What does this Python code print?\n\nx = [1, 2, 3]\ny = x\ny.append(4)\nprint(len(x))", "expected": "4 (y and x refer to the same list)"},
+  {"id": 8, "category": "format", "prompt": "List the three primary colours of light as a JSON array of strings. Output only the JSON.", "expected": "[\"red\", \"green\", \"blue\"] with nothing else"},
+  {"id": 9, "category": "format", "prompt": "Write exactly three bullet points on why sleep matters. Each bullet must be under 10 words.", "expected": "Exactly 3 bullets, each under 10 words"},
+  {"id": 10, "category": "summary", "prompt": "Summarise the following in one sentence:\n\nThe city council voted on Tuesday to extend the library's opening hours to 9 pm on weekdays, starting next month. The change follows a survey in which most students said they wanted somewhere quiet to study in the evening. The extra hours will be paid for by moving money from the events budget.", "expected": "One sentence covering: council extends library hours to 9 pm on weekdays, because students asked for evening study space, funded from events budget"}
+]

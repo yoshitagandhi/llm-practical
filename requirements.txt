@@ -1,0 +1,7 @@
+# Task 1 runs on Colab: the notebook installs trl and peft itself (versions it used are saved in task1_lora/results/train_log.json).
+# Tasks 2 and 3 run locally:
+numpy
+pypdf
+sentence-transformers
+psutil
+pytest

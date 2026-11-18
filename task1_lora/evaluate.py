@@ -210,7 +210,7 @@ def main():
 
     tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
     tokenizer.padding_side = "left"  # decoder-only models must be left-padded for batched generation
-    model = AutoModelForCausalLM.from_pretrained(MODEL_NAME, torch_dtype=torch.float16).to("cuda")
+    model = AutoModelForCausalLM.from_pretrained(MODEL_NAME, dtype=torch.float16).to("cuda")
     model.eval()
 
     print(f"Base model on {len(rows)} test rows")

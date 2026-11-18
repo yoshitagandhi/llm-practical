@@ -1,0 +1,32 @@
+{
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "adapter": "task1_lora/outputs/qwen05b-lora",
+  "decoding": {
+    "greedy": true,
+    "max_new_tokens": 160
+  },
+  "base": {
+    "n": 200,
+    "strict_json_rate": 0.0,
+    "parsed_rate": 1.0,
+    "intent_accuracy": 0.385,
+    "slot_precision": 0.18823529411764706,
+    "slot_recall": 0.11347517730496454,
+    "slot_f1": 0.1415929203539823,
+    "exact_match": 0.115
+  },
+  "fine_tuned": {
+    "n": 200,
+    "strict_json_rate": 1.0,
+    "parsed_rate": 1.0,
+    "intent_accuracy": 0.935,
+    "slot_precision": 0.8287671232876712,
+    "slot_recall": 0.8581560283687943,
+    "slot_f1": 0.8432055749128919,
+    "exact_match": 0.705
+  },
+  "generation_seconds": {
+    "base": 36.5,
+    "fine_tuned": 62.5
+  }
+}

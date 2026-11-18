@@ -1,0 +1,1974 @@
+id,scenario,utt,gold,base_output,base_exact,ft_output,ft_exact
+12159,transport,can you book an uber for me,"{""intent"": ""transport_taxi"", ""slots"": [{""type"": ""transport_agency"", ""value"": ""uber""}]}","```json
+{
+  ""intent"": ""transport_query"",
+  ""slots"": [
+    {
+      ""type"": ""time"",
+      ""value"": ""12:00""
+    },
+    {
+      ""type"": ""person"",
+      ""value"": ""you""
+    }
+  ]
+}
+```",False,"{""intent"": ""transport_taxi"", ""slots"": [{""type"": ""transport_agency"", ""value"": ""uber""}]}",True
+3407,weather,are there any forecasts of rain or snow this week,"{""intent"": ""weather_query"", ""slots"": [{""type"": ""weather_descriptor"", ""value"": ""rain or snow""}, {""type"": ""date"", ""value"": ""this week""}]}","```json
+{
+  ""intent"": ""weather_query"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""weather_query"", ""slots"": [{""type"": ""weather_descriptor"", ""value"": ""rain""}, {""type"": ""weather_descriptor"", ""value"": ""snow""}, {""type"": ""date"", ""value"": ""this week""}]}",False
+590,weather,what is the current weather,"{""intent"": ""weather_query"", ""slots"": []}","```json
+{
+  ""intent"": ""weather_query"",
+  ""slots"": []
+}
+```",True,"{""intent"": ""weather_query"", ""slots"": []}",True
+12856,transport,directions please,"{""intent"": ""transport_query"", ""slots"": []}","```json
+{
+  ""intent"": ""directions"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""transport_query"", ""slots"": []}",True
+6878,calendar,schedule a meeting with the accounting department on two thirty p. m. on friday,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""event_name"", ""value"": ""meeting""}, {""type"": ""business_name"", ""value"": ""accounting department""}, {""type"": ""time"", ""value"": ""two thirty p. m.""}, {""type"": ""date"", ""value"": ""friday""}]}","```json
+{
+  ""intent"": ""transport_query"",
+  ""slots"": [
+    {
+      ""type"": ""date"",
+      ""value"": ""2023-10-05""
+    },
+    {
+      ""type"": ""time"",
+      ""value"": ""18:00""
+    }
+  ]
+}
+```",False,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""event_name"", ""value"": ""meeting""}, {""type"": ""relation"", ""value"": ""accounting department""}, {""type"": ""time"", ""value"": ""two thirty p. m.""}, {""type"": ""date"", ""value"": ""friday""}]}",False
+6194,weather,how's the weather today,"{""intent"": ""weather_query"", ""slots"": [{""type"": ""date"", ""value"": ""today""}]}","```json
+{
+  ""intent"": ""weather_query"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""weather_query"", ""slots"": [{""type"": ""date"", ""value"": ""today""}]}",True
+5902,alarm,check if alarm is set for six am,"{""intent"": ""alarm_query"", ""slots"": [{""type"": ""time"", ""value"": ""six am""}]}","```json
+{
+  ""intent"": ""alarm_set"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""alarm_query"", ""slots"": [{""type"": ""time"", ""value"": ""six am""}]}",True
+4130,alarm,is my reminder alarm set for dance class,"{""intent"": ""alarm_query"", ""slots"": [{""type"": ""event_name"", ""value"": ""dance class""}]}","```json
+{
+  ""intent"": ""alarm_set"",
+  ""slots"": [
+    {
+      ""type"": ""alarm_type"",
+      ""value"": ""dance_class""
+    }
+  ]
+}
+```",False,"{""intent"": ""alarm_query"", ""slots"": [{""type"": ""event_name"", ""value"": ""dance class""}]}",True
+12838,transport,how is the traffic at the moment,"{""intent"": ""transport_traffic"", ""slots"": [{""type"": ""time"", ""value"": ""the moment""}]}","```json
+{
+  ""intent"": ""transport_traffic"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""transport_traffic"", ""slots"": []}",False
+3162,alarm,show me my alarms i have set,"{""intent"": ""alarm_query"", ""slots"": []}","```json
+{
+  ""intent"": ""alarm_set"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""alarm_query"", ""slots"": []}",True
+12376,transport,what is the first metro to d. c.,"{""intent"": ""transport_query"", ""slots"": [{""type"": ""transport_type"", ""value"": ""metro""}, {""type"": ""place_name"", ""value"": ""d. c.""}]}","```json
+{
+  ""intent"": ""alarm_query"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""transport_query"", ""slots"": [{""type"": ""transport_type"", ""value"": ""metro""}, {""type"": ""place_name"", ""value"": ""d. c.""}]}",True
+12851,transport,show me direction to my home,"{""intent"": ""transport_query"", ""slots"": [{""type"": ""place_name"", ""value"": ""home""}]}","```json
+{
+  ""intent"": ""transport_query"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""transport_query"", ""slots"": [{""type"": ""place_name"", ""value"": ""home""}]}",True
+8670,calendar,remove events from calendar,"{""intent"": ""calendar_remove"", ""slots"": []}","```json
+{
+  ""intent"": ""calendar_remove"",
+  ""slots"": []
+}
+```",True,"{""intent"": ""calendar_remove"", ""slots"": []}",True
+2611,weather,current weather forecast,"{""intent"": ""weather_query"", ""slots"": []}","```json
+{
+  ""intent"": ""weather_query"",
+  ""slots"": []
+}
+```",True,"{""intent"": ""weather_query"", ""slots"": []}",True
+8967,calendar,remind me two days before my wife birthday,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""relation"", ""value"": ""wife""}, {""type"": ""event_name"", ""value"": ""birthday""}]}","```json
+{
+  ""intent"": ""alarm_set"",
+  ""slots"": [
+    {
+      ""type"": ""date"",
+      ""value"": ""two_days_ago""
+    }
+  ]
+}
+```",False,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""event_name"", ""value"": ""wife birthday""}]}",False
+7889,calendar,what time will the soccer match be tonight,"{""intent"": ""calendar_query"", ""slots"": [{""type"": ""event_name"", ""value"": ""soccer match""}, {""type"": ""timeofday"", ""value"": ""tonight""}]}","```json
+{
+  ""intent"": ""transport_query"",
+  ""slots"": [
+    {
+      ""type"": ""time"",
+      ""value"": ""19:00""
+    }
+  ]
+}
+```",False,"{""intent"": ""calendar_query"", ""slots"": [{""type"": ""event_name"", ""value"": ""soccer""}, {""type"": ""timeofday"", ""value"": ""tonight""}]}",False
+826,weather,what is the current temperature outside,"{""intent"": ""weather_query"", ""slots"": [{""type"": ""weather_descriptor"", ""value"": ""temperature""}]}","```json
+{
+  ""intent"": ""weather_query"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""weather_query"", ""slots"": [{""type"": ""weather_descriptor"", ""value"": ""temperature""}]}",True
+790,weather,mild or heavy weather,"{""intent"": ""weather_query"", ""slots"": [{""type"": ""weather_descriptor"", ""value"": ""mild""}, {""type"": ""weather_descriptor"", ""value"": ""heavy""}]}","```json
+{
+  ""intent"": ""weather_query"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""weather_query"", ""slots"": [{""type"": ""weather_descriptor"", ""value"": ""mild or heavy""}]}",False
+2870,alarm,olly tell me my alarms,"{""intent"": ""alarm_query"", ""slots"": []}","```json
+{
+  ""intent"": ""alarm_query"",
+  ""slots"": []
+}
+```",True,"{""intent"": ""alarm_query"", ""slots"": []}",True
+5732,weather,shall i change my car tires to snow tires soon,"{""intent"": ""weather_query"", ""slots"": [{""type"": ""weather_descriptor"", ""value"": ""snow tires""}]}","```json
+{
+  ""intent"": ""transport_query"",
+  ""slots"": [
+    {
+      ""type"": ""time"",
+      ""value"": ""soon""
+    },
+    {
+      ""type"": ""person"",
+      ""value"": ""me""
+    }
+  ]
+}
+```",False,"{""intent"": ""weather_query"", ""slots"": [{""type"": ""weather_descriptor"", ""value"": ""car tires""}, {""type"": ""weather_descriptor"", ""value"": ""snow tires""}]}",False
+6069,weather,are storms likely today,"{""intent"": ""weather_query"", ""slots"": [{""type"": ""weather_descriptor"", ""value"": ""storms""}, {""type"": ""date"", ""value"": ""today""}]}","```json
+{
+  ""intent"": ""weather_query"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""weather_query"", ""slots"": [{""type"": ""weather_descriptor"", ""value"": ""storms""}, {""type"": ""date"", ""value"": ""today""}]}",True
+8413,calendar,please alert me,"{""intent"": ""calendar_set"", ""slots"": []}","```json
+{
+  ""intent"": ""alarm_query"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""alarm_set"", ""slots"": []}",False
+9019,calendar,meetings from twenty to twenty five june,"{""intent"": ""calendar_query"", ""slots"": [{""type"": ""event_name"", ""value"": ""meetings""}, {""type"": ""time"", ""value"": ""twenty to twenty five june""}]}","```json
+{
+  ""intent"": ""calendar_set"",
+  ""slots"": [
+    {
+      ""type"": ""date"",
+      ""value"": ""2023-06""
+    },
+    {
+      ""type"": ""time"",
+      ""value"": ""14:00""
+    }
+  ]
+}
+```",False,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""event_name"", ""value"": ""meetings""}, {""type"": ""date"", ""value"": ""twenty to twenty five june""}]}",False
+726,weather,summarize week's weather details,"{""intent"": ""weather_query"", ""slots"": [{""type"": ""time"", ""value"": ""week's""}]}","```json
+{
+  ""intent"": ""weather_query"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""weather_query"", ""slots"": [{""type"": ""time"", ""value"": ""week's""}]}",True
+8774,calendar,is my schedule for july seventh completely open,"{""intent"": ""calendar_query"", ""slots"": [{""type"": ""date"", ""value"": ""july seventh""}]}","```json
+{
+  ""intent"": ""calendar_set"",
+  ""slots"": [
+    {
+      ""type"": ""date"",
+      ""value"": ""july seventh""
+    }
+  ]
+}
+```",False,"{""intent"": ""calendar_query"", ""slots"": [{""type"": ""date"", ""value"": ""july seventh""}]}",True
+5321,weather,show weather,"{""intent"": ""weather_query"", ""slots"": []}","```json
+{
+  ""intent"": ""weather_query"",
+  ""slots"": []
+}
+```",True,"{""intent"": ""weather_query"", ""slots"": []}",True
+12707,transport,navigation search,"{""intent"": ""transport_query"", ""slots"": []}","```json
+{
+  ""intent"": ""navigation_search"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""transport_query"", ""slots"": []}",True
+12240,transport,what is the traffic like on my commute home at five,"{""intent"": ""transport_query"", ""slots"": [{""type"": ""place_name"", ""value"": ""home""}, {""type"": ""time"", ""value"": ""five""}]}","```json
+{
+  ""intent"": ""transport_traffic"",
+  ""slots"": [
+    {
+      ""type"": ""timeofday"",
+      ""value"": ""five""
+    }
+  ]
+}
+```",False,"{""intent"": ""transport_traffic"", ""slots"": [{""type"": ""place_name"", ""value"": ""home""}, {""type"": ""time"", ""value"": ""five""}]}",False
+12581,transport,when does the f. train run today,"{""intent"": ""transport_query"", ""slots"": [{""type"": ""transport_type"", ""value"": ""train""}, {""type"": ""date"", ""value"": ""today""}]}","```json
+{
+  ""intent"": ""alarm_set"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""transport_query"", ""slots"": [{""type"": ""transport_type"", ""value"": ""train""}, {""type"": ""date"", ""value"": ""today""}]}",True
+12905,transport,please reserve the next taxi a nine am,"{""intent"": ""transport_taxi"", ""slots"": [{""type"": ""transport_type"", ""value"": ""taxi""}, {""type"": ""time"", ""value"": ""nine am""}]}","```json
+{
+  ""intent"": ""transport_taxi"",
+  ""slots"": [
+    {
+      ""type"": ""date"",
+      ""value"": ""9 am""
+    }
+  ]
+}
+```",False,"{""intent"": ""transport_taxi"", ""slots"": [{""type"": ""transport_type"", ""value"": ""taxi""}, {""type"": ""time"", ""value"": ""nine am""}]}",True
+7870,calendar,delete event from calendar,"{""intent"": ""calendar_remove"", ""slots"": []}","```json
+{
+  ""intent"": ""calendar_remove"",
+  ""slots"": []
+}
+```",True,"{""intent"": ""calendar_remove"", ""slots"": []}",True
+5797,weather,should i wear raincoat before getting out,"{""intent"": ""weather_query"", ""slots"": [{""type"": ""weather_descriptor"", ""value"": ""raincoat""}]}","```json
+{
+  ""intent"": ""weather_query"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""weather_query"", ""slots"": [{""type"": ""weather_descriptor"", ""value"": ""raincoat""}, {""type"": ""time"", ""value"": ""before getting out""}]}",False
+8005,calendar,on monday the twentieth i need to have a conversation with greg about our weekend trip,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""date"", ""value"": ""monday the twentieth""}, {""type"": ""event_name"", ""value"": ""conversation""}, {""type"": ""person"", ""value"": ""greg""}, {""type"": ""event_name"", ""value"": ""our weekend trip""}]}","```json
+{
+  ""intent"": ""alarm_set"",
+  ""slots"": [
+    {
+      ""type"": ""date"",
+      ""value"": ""2023-11-24""
+    },
+    {
+      ""type"": ""time"",
+      ""value"": ""15:00""
+    }
+  ]
+}
+```",False,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""date"", ""value"": ""monday""}, {""type"": ""time"", ""value"": ""twentieth""}, {""type"": ""event_name"", ""value"": ""conversation""}, {""type"": ""person"", ""value"": ""greg""}, {""type"": ""date"", ""value"": ""weekend""}]}",False
+8960,calendar,i want you to make alert in the evening about upcoming meeting,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""timeofday"", ""value"": ""evening""}, {""type"": ""event_name"", ""value"": ""meeting""}]}","```json
+{
+  ""intent"": ""alarm_set"",
+  ""slots"": [
+    {
+      ""type"": ""date"",
+      ""value"": ""evening""
+    },
+    {
+      ""type"": ""time"",
+      ""value"": ""18:00""
+    }
+  ]
+}
+```",False,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""timeofday"", ""value"": ""evening""}, {""type"": ""event_name"", ""value"": ""meeting""}]}",True
+6897,calendar,remind me to pick up linda at five in the evening on seventh,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""event_name"", ""value"": ""pick up""}, {""type"": ""person"", ""value"": ""linda""}, {""type"": ""time"", ""value"": ""five""}, {""type"": ""timeofday"", ""value"": ""evening""}, {""type"": ""date"", ""value"": ""seventh""}]}","```json
+{
+  ""intent"": ""alarm_set"",
+  ""slots"": [
+    {
+      ""type"": ""date"",
+      ""value"": ""2023-10-15""
+    },
+    {
+      ""type"": ""time"",
+      ""value"": ""21:00""
+    }
+  ]
+}
+```",False,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""person"", ""value"": ""linda""}, {""type"": ""time"", ""value"": ""five""}, {""type"": ""timeofday"", ""value"": ""evening""}, {""type"": ""date"", ""value"": ""seventh""}]}",False
+103,weather,tell me the weather this week,"{""intent"": ""weather_query"", ""slots"": [{""type"": ""date"", ""value"": ""this week""}]}","```json
+{
+  ""intent"": ""weather_query"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""weather_query"", ""slots"": [{""type"": ""date"", ""value"": ""this week""}]}",True
+4482,weather,will i need to shovel my driveway this morning,"{""intent"": ""weather_query"", ""slots"": [{""type"": ""weather_descriptor"", ""value"": ""driveway""}, {""type"": ""timeofday"", ""value"": ""morning""}]}","```json
+{
+  ""intent"": ""alarm_set"",
+  ""slots"": [
+    {
+      ""type"": ""alarm_type"",
+      ""value"": ""shovel""
+    },
+    {
+      ""type"": ""app_name"",
+      ""value"": ""driveway""
+    }
+  ]
+}
+```",False,"{""intent"": ""weather_query"", ""slots"": [{""type"": ""weather_descriptor"", ""value"": ""shovel my driveway""}, {""type"": ""timeofday"", ""value"": ""morning""}]}",False
+12537,transport,find me the cheapest train ticket to spain,"{""intent"": ""transport_ticket"", ""slots"": [{""type"": ""transport_type"", ""value"": ""train""}, {""type"": ""place_name"", ""value"": ""spain""}]}","```json
+{
+  ""intent"": ""transport_query"",
+  ""slots"": [
+    {
+      ""type"": ""timeofday"",
+      ""value"": ""night""
+    },
+    {
+      ""type"": ""place_name"",
+      ""value"": ""Spain""
+    }
+  ]
+}
+```",False,"{""intent"": ""transport_ticket"", ""slots"": [{""type"": ""transport_type"", ""value"": ""train""}, {""type"": ""place_name"", ""value"": ""spain""}]}",True
+12873,transport,train ticket,"{""intent"": ""transport_ticket"", ""slots"": [{""type"": ""transport_type"", ""value"": ""train""}]}","```json
+{
+  ""intent"": ""transport_ticket"",
+  ""slots"": [
+    {
+      ""type"": ""date"",
+      ""value"": ""2023-10-05""
+    },
+    {
+      ""type"": ""time"",
+      ""value"": ""14:00""
+    }
+  ]
+}
+```",False,"{""intent"": ""transport_ticket"", ""slots"": [{""type"": ""transport_type"", ""value"": ""train""}]}",True
+7278,calendar,remind me of rita's birthday twenty four hours in advance,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""person"", ""value"": ""rita's""}, {""type"": ""event_name"", ""value"": ""birthday""}, {""type"": ""time"", ""value"": ""twenty four hours in advance""}]}","```json
+{
+  ""intent"": ""alarm_set"",
+  ""slots"": [
+    {
+      ""type"": ""date"",
+      ""value"": ""2023-12-31""
+    },
+    {
+      ""type"": ""time"",
+      ""value"": ""23:59""
+    }
+  ]
+}
+```",False,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""person"", ""value"": ""rita's""}, {""type"": ""event_name"", ""value"": ""birthday""}]}",False
+12779,transport,reserve the closest uber,"{""intent"": ""transport_taxi"", ""slots"": [{""type"": ""transport_agency"", ""value"": ""uber""}]}","```json
+{
+  ""intent"": ""transport_query"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""transport_taxi"", ""slots"": [{""type"": ""transport_agency"", ""value"": ""uber""}]}",True
+4412,weather,what's the weather in portland,"{""intent"": ""weather_query"", ""slots"": [{""type"": ""place_name"", ""value"": ""portland""}]}","```json
+{
+  ""intent"": ""weather_query"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""weather_query"", ""slots"": [{""type"": ""place_name"", ""value"": ""portland""}]}",True
+5661,weather,should i take my raincoat with me now,"{""intent"": ""weather_query"", ""slots"": [{""type"": ""weather_descriptor"", ""value"": ""raincoat""}]}","```json
+{
+  ""intent"": ""weather_query"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""weather_query"", ""slots"": [{""type"": ""weather_descriptor"", ""value"": ""raincoat""}]}",True
+7257,calendar,please remind me to call mom in half an hour,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""event_name"", ""value"": ""call""}, {""type"": ""relation"", ""value"": ""mom""}, {""type"": ""time"", ""value"": ""in half an hour""}]}","```json
+{
+  ""intent"": ""alarm_reminder"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""relation"", ""value"": ""mom""}, {""type"": ""time"", ""value"": ""half an hour""}]}",False
+12932,transport,olly i need directions to madison street,"{""intent"": ""transport_query"", ""slots"": [{""type"": ""place_name"", ""value"": ""madison street""}]}","```json
+{
+  ""intent"": ""directions"",
+  ""slots"": [
+    {
+      ""type"": ""place_name"",
+      ""value"": ""Madison Street""
+    }
+  ]
+}
+```",False,"{""intent"": ""transport_query"", ""slots"": [{""type"": ""place_name"", ""value"": ""madison""}]}",False
+2777,weather,should i bring an umbrella today,"{""intent"": ""weather_query"", ""slots"": [{""type"": ""date"", ""value"": ""today""}]}","```json
+{
+  ""intent"": ""weather_query"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""weather_query"", ""slots"": [{""type"": ""weather_descriptor"", ""value"": ""umbrella""}, {""type"": ""date"", ""value"": ""today""}]}",False
+7583,calendar,buddy adding event in your calendar,"{""intent"": ""calendar_set"", ""slots"": []}","```json
+{
+  ""intent"": ""calendar_add"",
+  ""slots"": [
+    {
+      ""type"": ""event_name"",
+      ""value"": ""buddy_event""
+    },
+    {
+      ""type"": ""date"",
+      ""value"": ""2023-10-05""
+    }
+  ]
+}
+```",False,"{""intent"": ""calendar_set"", ""slots"": []}",True
+2983,alarm,remove set alarm,"{""intent"": ""alarm_remove"", ""slots"": []}","```json
+{
+  ""intent"": ""alarm_remove"",
+  ""slots"": []
+}
+```",True,"{""intent"": ""alarm_remove"", ""slots"": []}",True
+7467,calendar,give me the time of the events,"{""intent"": ""calendar_query"", ""slots"": []}","```json
+{
+  ""intent"": ""time"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""calendar_query"", ""slots"": []}",True
+7292,calendar,i am unavailable from four to six in the evening tomorrow mark my calendar,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""time"", ""value"": ""four""}, {""type"": ""time"", ""value"": ""six""}, {""type"": ""timeofday"", ""value"": ""evening""}, {""type"": ""date"", ""value"": ""tomorrow""}]}","```json
+{
+  ""intent"": ""calendar_query"",
+  ""slots"": [
+    {
+      ""type"": ""date"",
+      ""value"": ""tomorrow""
+    },
+    {
+      ""type"": ""time"",
+      ""value"": ""four to six""
+    }
+  ]
+}
+```",False,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""time"", ""value"": ""four""}, {""type"": ""time"", ""value"": ""six""}, {""type"": ""timeofday"", ""value"": ""evening""}, {""type"": ""date"", ""value"": ""tomorrow""}]}",True
+9035,calendar,rahul marriage reminder,"{""intent"": ""calendar_query"", ""slots"": [{""type"": ""person"", ""value"": ""rahul""}, {""type"": ""event_name"", ""value"": ""marriage""}]}","```json
+{
+  ""intent"": ""alarm_set"",
+  ""slots"": [
+    {
+      ""type"": ""date"",
+      ""value"": ""2023-10-05""
+    },
+    {
+      ""type"": ""person"",
+      ""value"": ""Rahul""
+    }
+  ]
+}
+```",False,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""person"", ""value"": ""rahul""}, {""type"": ""event_name"", ""value"": ""marriage""}]}",False
+6789,calendar,set meeting with joanna on saturday four p. m.,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""person"", ""value"": ""joanna""}, {""type"": ""date"", ""value"": ""saturday""}, {""type"": ""time"", ""value"": ""four p. m.""}]}","```json
+{
+  ""intent"": ""alarm_set"",
+  ""slots"": [
+    {
+      ""type"": ""date"",
+      ""value"": ""2023-10-04T15:00:00""
+    },
+    {
+      ""type"": ""person"",
+      ""value"": ""Joanna""
+    }
+  ]
+}
+```",False,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""event_name"", ""value"": ""meeting""}, {""type"": ""person"", ""value"": ""joanna""}, {""type"": ""date"", ""value"": ""saturday""}, {""type"": ""time"", ""value"": ""four p. m.""}]}",False
+1264,alarm,is my alarm set for tomorrow morning,"{""intent"": ""alarm_query"", ""slots"": [{""type"": ""date"", ""value"": ""tomorrow""}, {""type"": ""timeofday"", ""value"": ""morning""}]}","```json
+{
+  ""intent"": ""alarm_set"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""alarm_query"", ""slots"": [{""type"": ""date"", ""value"": ""tomorrow""}, {""type"": ""timeofday"", ""value"": ""morning""}]}",True
+8073,calendar,schedule a sales meeting for wednesday at eleven am,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""event_name"", ""value"": ""sales meeting""}, {""type"": ""date"", ""value"": ""wednesday""}, {""type"": ""time"", ""value"": ""eleven am""}]}","```json
+{
+  ""intent"": ""transport_query"",
+  ""slots"": [
+    {
+      ""type"": ""date"",
+      ""value"": ""wednesday""
+    },
+    {
+      ""type"": ""time"",
+      ""value"": ""eleven am""
+    }
+  ]
+}
+```",False,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""event_name"", ""value"": ""sales meeting""}, {""type"": ""date"", ""value"": ""wednesday""}, {""type"": ""time"", ""value"": ""eleven am""}]}",True
+8618,calendar,remind me to water my plants every tuesday thursday and saturday,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""event_name"", ""value"": ""water my plants""}, {""type"": ""general_frequency"", ""value"": ""every tuesday thursday and saturday""}]}","```json
+{
+  ""intent"": ""alarm_set"",
+  ""slots"": [
+    {
+      ""type"": ""date"",
+      ""value"": ""tuesday""
+    },
+    {
+      ""type"": ""time"",
+      ""value"": ""thursday""
+    },
+    {
+      ""type"": ""time"",
+      ""value"": ""saturday""
+    }
+  ]
+}
+```",False,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""event_name"", ""value"": ""water my plants""}, {""type"": ""general_frequency"", ""value"": ""every tuesday thursday and saturday""}]}",True
+3702,alarm,olly do i have an alarm set for tomorrow,"{""intent"": ""alarm_query"", ""slots"": [{""type"": ""date"", ""value"": ""tomorrow""}]}","```json
+{
+  ""intent"": ""alarm_set"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""alarm_query"", ""slots"": [{""type"": ""date"", ""value"": ""tomorrow""}]}",True
+7569,calendar,plan for tomorrow,"{""intent"": ""calendar_query"", ""slots"": [{""type"": ""date"", ""value"": ""tomorrow""}]}","```json
+{
+  ""intent"": ""transport_query"",
+  ""slots"": [
+    {
+      ""type"": ""date"",
+      ""value"": ""tomorrow""
+    },
+    {
+      ""type"": ""time"",
+      ""value"": ""10:00""
+    }
+  ]
+}
+```",False,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""date"", ""value"": ""tomorrow""}]}",False
+2220,weather,weather in paris,"{""intent"": ""weather_query"", ""slots"": [{""type"": ""place_name"", ""value"": ""paris""}]}","```json
+{
+  ""intent"": ""weather_query"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""weather_query"", ""slots"": [{""type"": ""place_name"", ""value"": ""paris""}]}",True
+8731,alarm,set a repeating reminder alarm for the facebook event i have to attend on seventh april,"{""intent"": ""alarm_set"", ""slots"": [{""type"": ""media_type"", ""value"": ""facebook""}, {""type"": ""date"", ""value"": ""seventh april""}]}","```json
+{
+  ""intent"": ""alarm_set"",
+  ""slots"": [
+    {
+      ""type"": ""date"",
+      ""value"": ""7th April""
+    },
+    {
+      ""type"": ""event_name"",
+      ""value"": ""facebook""
+    }
+  ]
+}
+```",False,"{""intent"": ""alarm_set"", ""slots"": [{""type"": ""event_name"", ""value"": ""facebook""}, {""type"": ""date"", ""value"": ""seventh april""}]}",False
+6968,calendar,i need to confirm all meetings for today can the invite person,"{""intent"": ""calendar_query"", ""slots"": [{""type"": ""event_name"", ""value"": ""meetings""}, {""type"": ""date"", ""value"": ""today""}]}","```json
+{
+  ""intent"": ""calendar_set"",
+  ""slots"": [
+    {
+      ""type"": ""date"",
+      ""value"": ""today""
+    },
+    {
+      ""type"": ""person"",
+      ""value"": ""invite_person""
+    }
+  ]
+}
+```",False,"{""intent"": ""calendar_query"", ""slots"": [{""type"": ""event_name"", ""value"": ""meetings""}, {""type"": ""date"", ""value"": ""today""}]}",True
+9187,calendar,research the clients that will attend the meeting,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""event_name"", ""value"": ""the meeting""}]}","```json
+{
+  ""intent"": ""transport_query"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""calendar_query"", ""slots"": [{""type"": ""event_name"", ""value"": ""meeting""}]}",False
+9116,calendar,could you reschedule my meeting,"{""intent"": ""calendar_query"", ""slots"": [{""type"": ""event_name"", ""value"": ""meeting""}]}","```json
+{
+  ""intent"": ""alarm_set"",
+  ""slots"": [
+    {
+      ""type"": ""date"",
+      ""value"": ""2023-10-05""
+    },
+    {
+      ""type"": ""time"",
+      ""value"": ""14:00""
+    }
+  ]
+}
+```",False,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""event_name"", ""value"": ""meeting""}]}",False
+7499,calendar,make new schedule for tomorrow meeting,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""date"", ""value"": ""tomorrow""}, {""type"": ""event_name"", ""value"": ""meeting""}]}","```json
+{
+  ""intent"": ""alarm_set"",
+  ""slots"": [
+    {
+      ""type"": ""date"",
+      ""value"": ""tomorrow""
+    },
+    {
+      ""type"": ""person"",
+      ""value"": ""meeting""
+    }
+  ]
+}
+```",False,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""date"", ""value"": ""tomorrow""}, {""type"": ""event_name"", ""value"": ""meeting""}]}",True
+8900,calendar,set repeating reminder for every sunday,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""general_frequency"", ""value"": ""every sunday""}]}","```json
+{
+  ""intent"": ""alarm_set"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""general_frequency"", ""value"": ""every sunday""}]}",True
+5103,alarm,olly cancel all soccer practice alarms,"{""intent"": ""alarm_remove"", ""slots"": [{""type"": ""alarm_type"", ""value"": ""soccer practice""}]}","```json
+{
+  ""intent"": ""alarm_set"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""alarm_remove"", ""slots"": [{""type"": ""event_name"", ""value"": ""soccer practice""}]}",False
+1866,weather,weather report now,"{""intent"": ""weather_query"", ""slots"": []}","```json
+{
+  ""intent"": ""weather_query"",
+  ""slots"": []
+}
+```",True,"{""intent"": ""weather_query"", ""slots"": []}",True
+1351,weather,will it be nice outside this week,"{""intent"": ""weather_query"", ""slots"": [{""type"": ""weather_descriptor"", ""value"": ""nice""}, {""type"": ""date"", ""value"": ""this week""}]}","```json
+{
+  ""intent"": ""weather_query"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""weather_query"", ""slots"": [{""type"": ""weather_descriptor"", ""value"": ""nice""}, {""type"": ""date"", ""value"": ""this week""}]}",True
+12289,transport,is there a traffic jam on my route,"{""intent"": ""transport_traffic"", ""slots"": []}","```json
+{
+  ""intent"": ""transport_traffic"",
+  ""slots"": []
+}
+```",True,"{""intent"": ""transport_traffic"", ""slots"": []}",True
+6023,weather,will it be a sticky night,"{""intent"": ""weather_query"", ""slots"": [{""type"": ""weather_descriptor"", ""value"": ""sticky""}, {""type"": ""timeofday"", ""value"": ""night""}]}","```json
+{
+  ""intent"": ""weather_query"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""weather_query"", ""slots"": [{""type"": ""weather_descriptor"", ""value"": ""sticky night""}]}",False
+6959,calendar,remind me about my meeting an hour before it begins,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""event_name"", ""value"": ""meeting""}, {""type"": ""time"", ""value"": ""an hour""}]}","```json
+{
+  ""intent"": ""alarm_set"",
+  ""slots"": [
+    {
+      ""type"": ""date"",
+      ""value"": ""1 hour""
+    }
+  ]
+}
+```",False,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""event_name"", ""value"": ""meeting""}, {""type"": ""time"", ""value"": ""an hour""}]}",True
+2258,weather,do i need a sweater today,"{""intent"": ""weather_query"", ""slots"": [{""type"": ""weather_descriptor"", ""value"": ""sweater""}, {""type"": ""date"", ""value"": ""today""}]}","```json
+{
+  ""intent"": ""alarm_set"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""weather_query"", ""slots"": [{""type"": ""weather_descriptor"", ""value"": ""sweater""}, {""type"": ""date"", ""value"": ""today""}]}",True
+12846,transport,please book train ticket from mumbai to sangli for tomorrow morning,"{""intent"": ""transport_ticket"", ""slots"": [{""type"": ""transport_type"", ""value"": ""train""}, {""type"": ""place_name"", ""value"": ""mumbai""}, {""type"": ""place_name"", ""value"": ""sangli""}, {""type"": ""date"", ""value"": ""tomorrow""}, {""type"": ""timeofday"", ""value"": ""morning""}]}","```json
+{
+  ""intent"": ""transport_query"",
+  ""slots"": [
+    {
+      ""type"": ""date"",
+      ""value"": ""tomorrow morning""
+    },
+    {
+      ""type"": ""person"",
+      ""value"": ""train ticket""
+    }
+  ]
+}
+```",False,"{""intent"": ""transport_ticket"", ""slots"": [{""type"": ""transport_type"", ""value"": ""train""}, {""type"": ""place_name"", ""value"": ""mumbai to sangli""}, {""type"": ""date"", ""value"": ""tomorrow""}, {""type"": ""timeofday"", ""value"": ""morning""}]}",False
+3161,alarm,do i have any alarms set for six am tomorrow,"{""intent"": ""alarm_query"", ""slots"": [{""type"": ""time"", ""value"": ""six am""}, {""type"": ""date"", ""value"": ""tomorrow""}]}","```json
+{
+  ""intent"": ""alarm_set"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""alarm_query"", ""slots"": [{""type"": ""time"", ""value"": ""six am""}, {""type"": ""date"", ""value"": ""tomorrow""}]}",True
+12689,transport,book a train ticket from here to charleston west virginia at eight am today,"{""intent"": ""transport_ticket"", ""slots"": [{""type"": ""transport_type"", ""value"": ""train""}, {""type"": ""place_name"", ""value"": ""charleston west virginia""}, {""type"": ""time"", ""value"": ""eight am""}, {""type"": ""date"", ""value"": ""today""}]}","```json
+{
+  ""intent"": ""transport_query"",
+  ""slots"": [
+    {
+      ""type"": ""date"",
+      ""value"": ""2023-10-05""
+    },
+    {
+      ""type"": ""time"",
+      ""value"": ""8 AM""
+    }
+  ]
+}
+```",False,"{""intent"": ""transport_ticket"", ""slots"": [{""type"": ""transport_type"", ""value"": ""train""}, {""type"": ""place_name"", ""value"": ""charleston west virginia""}, {""type"": ""time"", ""value"": ""eight am""}, {""type"": ""date"", ""value"": ""today""}]}",True
+12722,transport,order a train ticket to boston,"{""intent"": ""transport_ticket"", ""slots"": [{""type"": ""transport_type"", ""value"": ""train""}, {""type"": ""place_name"", ""value"": ""boston""}]}","```json
+{
+  ""intent"": ""transport_query"",
+  ""slots"": [
+    {
+      ""type"": ""time"",
+      ""value"": ""14:00""
+    },
+    {
+      ""type"": ""person"",
+      ""value"": ""John Doe""
+    }
+  ]
+}
+```",False,"{""intent"": ""transport_ticket"", ""slots"": [{""type"": ""transport_type"", ""value"": ""train""}, {""type"": ""place_name"", ""value"": ""boston""}]}",True
+8042,calendar,how many people are attending my next meeting,"{""intent"": ""calendar_query"", ""slots"": [{""type"": ""event_name"", ""value"": ""meeting""}]}","```json
+{
+  ""intent"": ""transport_query"",
+  ""slots"": [
+    {
+      ""type"": ""person"",
+      ""value"": ""attendee""
+    },
+    {
+      ""type"": ""timeofday"",
+      ""value"": ""morning""
+    }
+  ]
+}
+```",False,"{""intent"": ""calendar_query"", ""slots"": [{""type"": ""event_name"", ""value"": ""meeting""}]}",True
+11180,calendar,my party planning,"{""intent"": ""calendar_query"", ""slots"": [{""type"": ""event_name"", ""value"": ""party""}]}","```json
+{
+  ""intent"": ""party_planning"",
+  ""slots"": [
+    {
+      ""type"": ""alarm_type"",
+      ""value"": ""party""
+    },
+    {
+      ""type"": ""app_name"",
+      ""value"": ""My Party Planner""
+    }
+  ]
+}
+```",False,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""event_name"", ""value"": ""party""}]}",False
+7503,calendar,where in d. c. is that meeting at one p. m. on friday,"{""intent"": ""calendar_query"", ""slots"": [{""type"": ""place_name"", ""value"": ""d. c.""}, {""type"": ""event_name"", ""value"": ""meeting""}, {""type"": ""time"", ""value"": ""one p. m.""}, {""type"": ""date"", ""value"": ""friday""}]}","```json
+{
+  ""intent"": ""transport_query"",
+  ""slots"": [
+    {
+      ""type"": ""date"",
+      ""value"": ""2023-12-15""
+    },
+    {
+      ""type"": ""time"",
+      ""value"": ""14:00""
+    }
+  ]
+}
+```",False,"{""intent"": ""calendar_query"", ""slots"": [{""type"": ""place_name"", ""value"": ""d. c.""}, {""type"": ""event_name"", ""value"": ""meeting""}, {""type"": ""time"", ""value"": ""one p. m.""}, {""type"": ""date"", ""value"": ""friday""}]}",True
+4524,weather,olly what is the weather forecast for today,"{""intent"": ""weather_query"", ""slots"": [{""type"": ""date"", ""value"": ""today""}]}","```json
+{
+  ""intent"": ""weather_query"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""weather_query"", ""slots"": [{""type"": ""date"", ""value"": ""today""}]}",True
+7542,calendar,please remind me about this tomorrow,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""date"", ""value"": ""tomorrow""}]}","```json
+{
+  ""intent"": ""alarm_remind"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""date"", ""value"": ""tomorrow""}]}",True
+7450,calendar,i need a meeting to be schedule with this person,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""event_name"", ""value"": ""meeting""}]}","```json
+{
+  ""intent"": ""transport_query"",
+  ""slots"": [
+    {
+      ""type"": ""person"",
+      ""value"": ""this person""
+    }
+  ]
+}
+```",False,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""event_name"", ""value"": ""meeting""}]}",True
+5577,weather,i will require full cover jacket if it is too stormy in evening,"{""intent"": ""weather_query"", ""slots"": [{""type"": ""weather_descriptor"", ""value"": ""full cover jacket""}, {""type"": ""weather_descriptor"", ""value"": ""too stormy""}, {""type"": ""timeofday"", ""value"": ""evening""}]}","```json
+{
+  ""intent"": ""weather_query"",
+  ""slots"": [
+    {
+      ""type"": ""timeofday"",
+      ""value"": ""evening""
+    },
+    {
+      ""type"": ""event_name"",
+      ""value"": ""stormy""
+    }
+  ]
+}
+```",False,"{""intent"": ""weather_query"", ""slots"": [{""type"": ""weather_descriptor"", ""value"": ""full cover jacket""}, {""type"": ""weather_descriptor"", ""value"": ""stormy""}, {""type"": ""timeofday"", ""value"": ""evening""}]}",False
+12339,transport,book a train ticket for one one way for this tuesday at nine am,"{""intent"": ""transport_ticket"", ""slots"": [{""type"": ""transport_type"", ""value"": ""train""}, {""type"": ""transport_descriptor"", ""value"": ""one way""}, {""type"": ""date"", ""value"": ""tuesday""}, {""type"": ""time"", ""value"": ""nine am""}]}","```json
+{
+  ""intent"": ""transport_query"",
+  ""slots"": [
+    {
+      ""type"": ""date"",
+      ""value"": ""tuesday""
+    },
+    {
+      ""type"": ""time"",
+      ""value"": ""nine_am""
+    }
+  ]
+}
+```",False,"{""intent"": ""transport_ticket"", ""slots"": [{""type"": ""transport_type"", ""value"": ""train""}, {""type"": ""date"", ""value"": ""tuesday""}, {""type"": ""time"", ""value"": ""nine am""}]}",False
+6806,calendar,show me my calendar event this friday afternoon,"{""intent"": ""calendar_query"", ""slots"": [{""type"": ""date"", ""value"": ""this friday""}, {""type"": ""timeofday"", ""value"": ""afternoon""}]}","```json
+{
+  ""intent"": ""calendar_query"",
+  ""slots"": [
+    {
+      ""type"": ""date"",
+      ""value"": ""2023-11-15""
+    },
+    {
+      ""type"": ""time"",
+      ""value"": ""14:00""
+    }
+  ]
+}
+```",False,"{""intent"": ""calendar_query"", ""slots"": [{""type"": ""date"", ""value"": ""this friday""}, {""type"": ""timeofday"", ""value"": ""afternoon""}]}",True
+12233,transport,google train tickets to washington d. c.,"{""intent"": ""transport_ticket"", ""slots"": [{""type"": ""transport_type"", ""value"": ""train""}, {""type"": ""place_name"", ""value"": ""washington d. c.""}]}","```json
+{
+  ""intent"": ""transport_query"",
+  ""slots"": [
+    {
+      ""type"": ""date"",
+      ""value"": ""2023-10-05""
+    },
+    {
+      ""type"": ""time"",
+      ""value"": ""14:00""
+    }
+  ]
+}
+```",False,"{""intent"": ""transport_ticket"", ""slots"": [{""type"": ""transport_type"", ""value"": ""train""}, {""type"": ""place_name"", ""value"": ""washington d. c.""}]}",True
+1933,weather,will there be a fall in temperature by tonight,"{""intent"": ""weather_query"", ""slots"": [{""type"": ""weather_descriptor"", ""value"": ""temperature""}, {""type"": ""timeofday"", ""value"": ""tonight""}]}","```json
+{
+  ""intent"": ""weather_query"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""weather_query"", ""slots"": [{""type"": ""weather_descriptor"", ""value"": ""fall""}, {""type"": ""temperature"", ""value"": ""by""}, {""type"": ""timeofday"", ""value"": ""tonight""}]}",False
+9061,calendar,what information do i have on reminders,"{""intent"": ""calendar_query"", ""slots"": []}","```json
+{
+  ""intent"": ""alarm_set"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""calendar_query"", ""slots"": []}",True
+12436,transport,how long will it take to get to the airport,"{""intent"": ""transport_query"", ""slots"": [{""type"": ""place_name"", ""value"": ""airport""}]}","```json
+{
+  ""intent"": ""transport_query"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""transport_query"", ""slots"": [{""type"": ""place_name"", ""value"": ""airport""}]}",True
+4764,weather,is it going to rain on monday,"{""intent"": ""weather_query"", ""slots"": [{""type"": ""weather_descriptor"", ""value"": ""rain""}, {""type"": ""date"", ""value"": ""monday""}]}","```json
+{
+  ""intent"": ""weather_query"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""weather_query"", ""slots"": [{""type"": ""weather_descriptor"", ""value"": ""rain""}, {""type"": ""date"", ""value"": ""monday""}]}",True
+8579,calendar,what information should i know for my meetings today,"{""intent"": ""calendar_query"", ""slots"": [{""type"": ""event_name"", ""value"": ""meetings""}, {""type"": ""date"", ""value"": ""today""}]}","```json
+{
+  ""intent"": ""transport_query"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""calendar_query"", ""slots"": [{""type"": ""event_name"", ""value"": ""meetings""}, {""type"": ""date"", ""value"": ""today""}]}",True
+13457,calendar,tell me when i should leave for a scheduled event so that i am on time,"{""intent"": ""calendar_set"", ""slots"": []}","```json
+{
+  ""intent"": ""transport_query"",
+  ""slots"": [
+    {
+      ""type"": ""time"",
+      ""value"": ""17:00""
+    },
+    {
+      ""type"": ""event_name"",
+      ""value"": ""scheduled_event""
+    }
+  ]
+}
+```",False,"{""intent"": ""calendar_set"", ""slots"": []}",True
+4589,calendar,set a notification for sports game,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""event_name"", ""value"": ""sports game""}]}","```json
+{
+  ""intent"": ""transport_game"",
+  ""slots"": [
+    {
+      ""type"": ""sport_type"",
+      ""value"": ""sports""
+    },
+    {
+      ""type"": ""event_name"",
+      ""value"": ""sports_game""
+    }
+  ]
+}
+```",False,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""event_name"", ""value"": ""sports game""}]}",True
+8085,calendar,i'd like to set a date for this week,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""date"", ""value"": ""this week""}]}","```json
+{
+  ""intent"": ""calendar_set"",
+  ""slots"": [
+    {
+      ""type"": ""date"",
+      ""value"": ""this week""
+    }
+  ]
+}
+```",True,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""date"", ""value"": ""this week""}]}",True
+7570,calendar,what is the plan today,"{""intent"": ""calendar_query"", ""slots"": []}","```json
+{
+  ""intent"": ""alarm_set"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""calendar_query"", ""slots"": [{""type"": ""date"", ""value"": ""today""}]}",False
+6836,calendar,remind me about the meeting tomorrow at six,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""event_name"", ""value"": ""meeting""}, {""type"": ""date"", ""value"": ""tomorrow""}, {""type"": ""time"", ""value"": ""six""}]}","```json
+{
+  ""intent"": ""transport_query"",
+  ""slots"": [
+    {
+      ""type"": ""date"",
+      ""value"": ""tomorrow""
+    },
+    {
+      ""type"": ""time"",
+      ""value"": ""6""
+    }
+  ]
+}
+```",False,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""event_name"", ""value"": ""meeting""}, {""type"": ""date"", ""value"": ""tomorrow""}, {""type"": ""time"", ""value"": ""six""}]}",True
+12160,transport,can you book an uber tomorrow,"{""intent"": ""transport_taxi"", ""slots"": [{""type"": ""transport_agency"", ""value"": ""uber""}, {""type"": ""date"", ""value"": ""tomorrow""}]}","```json
+{
+  ""intent"": ""transport_query"",
+  ""slots"": [
+    {
+      ""type"": ""time"",
+      ""value"": ""tomorrow""
+    },
+    {
+      ""type"": ""person"",
+      ""value"": ""uber""
+    }
+  ]
+}
+```",False,"{""intent"": ""transport_taxi"", ""slots"": [{""type"": ""transport_agency"", ""value"": ""uber""}, {""type"": ""date"", ""value"": ""tomorrow""}]}",True
+8766,calendar,do i have a meeting on saturday march twenty fifth,"{""intent"": ""calendar_query"", ""slots"": [{""type"": ""event_name"", ""value"": ""meeting""}, {""type"": ""date"", ""value"": ""saturday march twenty fifth""}]}","```json
+{
+  ""intent"": ""calendar_set"",
+  ""slots"": [
+    {
+      ""type"": ""date"",
+      ""value"": ""2023-03-25""
+    },
+    {
+      ""type"": ""time"",
+      ""value"": ""14:00""
+    }
+  ]
+}
+```",False,"{""intent"": ""calendar_query"", ""slots"": [{""type"": ""event_name"", ""value"": ""meeting""}, {""type"": ""date"", ""value"": ""saturday march twenty fifth""}]}",True
+5758,weather,how's the weather in the capital city,"{""intent"": ""weather_query"", ""slots"": [{""type"": ""place_name"", ""value"": ""the capital city""}]}","```json
+{
+  ""intent"": ""weather_query"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""weather_query"", ""slots"": [{""type"": ""place_name"", ""value"": ""capital city""}]}",False
+7161,calendar,remind this event in future,"{""intent"": ""calendar_set"", ""slots"": []}","```json
+{
+  ""intent"": ""alarm_set"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""calendar_set"", ""slots"": []}",True
+1549,weather,will it rain this week,"{""intent"": ""weather_query"", ""slots"": [{""type"": ""weather_descriptor"", ""value"": ""rain""}, {""type"": ""date"", ""value"": ""this week""}]}","```json
+{
+  ""intent"": ""weather_query"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""weather_query"", ""slots"": [{""type"": ""weather_descriptor"", ""value"": ""rain""}, {""type"": ""date"", ""value"": ""this week""}]}",True
+6024,weather,should i take a sweater or a coat to work today,"{""intent"": ""weather_query"", ""slots"": [{""type"": ""weather_descriptor"", ""value"": ""sweater""}, {""type"": ""weather_descriptor"", ""value"": ""coat""}, {""type"": ""date"", ""value"": ""today""}]}","```json
+{
+  ""intent"": ""transport_query"",
+  ""slots"": [
+    {
+      ""type"": ""time"",
+      ""value"": ""today""
+    },
+    {
+      ""type"": ""food_type"",
+      ""value"": ""sweater""
+    },
+    {
+      ""type"": ""meal_type"",
+      ""value"": ""coat""
+    }
+  ]
+}
+```",False,"{""intent"": ""weather_query"", ""slots"": [{""type"": ""weather_descriptor"", ""value"": ""sweater""}, {""type"": ""weather_descriptor"", ""value"": ""coat""}, {""type"": ""date"", ""value"": ""today""}]}",True
+12869,transport,traffic report,"{""intent"": ""transport_traffic"", ""slots"": []}","```json
+{
+  ""intent"": ""transport_traffic"",
+  ""slots"": [
+    {
+      ""type"": ""timeofday"",
+      ""value"": ""morning""
+    },
+    {
+      ""type"": ""event_name"",
+      ""value"": ""traffic report""
+    }
+  ]
+}
+```",False,"{""intent"": ""transport_traffic"", ""slots"": []}",True
+7111,calendar,what time is my doctor appointment on march thirty first,"{""intent"": ""calendar_query"", ""slots"": [{""type"": ""event_name"", ""value"": ""doctor appointment""}, {""type"": ""date"", ""value"": ""march thirty first""}]}","```json
+{
+  ""intent"": ""doctor_appointment"",
+  ""slots"": [
+    {
+      ""type"": ""time"",
+      ""value"": ""31st""
+    }
+  ]
+}
+```",False,"{""intent"": ""calendar_query"", ""slots"": [{""type"": ""event_name"", ""value"": ""doctor appointment""}, {""type"": ""date"", ""value"": ""march thirty first""}]}",True
+7726,calendar,i need to something every monday set a reminder for it,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""general_frequency"", ""value"": ""every monday""}]}","```json
+{
+  ""intent"": ""alarm_set"",
+  ""slots"": [
+    {
+      ""type"": ""date"",
+      ""value"": ""monday""
+    }
+  ]
+}
+```",False,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""general_frequency"", ""value"": ""every monday""}]}",True
+6815,calendar,remind me my mom's birthday a week before,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""relation"", ""value"": ""mom's""}, {""type"": ""event_name"", ""value"": ""birthday""}, {""type"": ""time"", ""value"": ""a week before""}]}","```json
+{
+  ""intent"": ""alarm_set"",
+  ""slots"": [
+    {
+      ""type"": ""date"",
+      ""value"": ""2023-12-05""
+    },
+    {
+      ""type"": ""person"",
+      ""value"": ""mom""
+    }
+  ]
+}
+```",False,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""relation"", ""value"": ""mom's""}, {""type"": ""event_name"", ""value"": ""birthday""}, {""type"": ""date"", ""value"": ""week""}]}",False
+1719,alarm,set alarm of only monday morning six am,"{""intent"": ""alarm_set"", ""slots"": [{""type"": ""date"", ""value"": ""monday""}, {""type"": ""timeofday"", ""value"": ""morning""}, {""type"": ""time"", ""value"": ""six am""}]}","```json
+{
+  ""intent"": ""alarm_set"",
+  ""slots"": [
+    {
+      ""type"": ""date"",
+      ""value"": ""monday""
+    },
+    {
+      ""type"": ""time"",
+      ""value"": ""6am""
+    }
+  ]
+}
+```",False,"{""intent"": ""alarm_set"", ""slots"": [{""type"": ""date"", ""value"": ""monday""}, {""type"": ""timeofday"", ""value"": ""morning""}, {""type"": ""time"", ""value"": ""six am""}]}",True
+5590,weather,open temperature,"{""intent"": ""weather_query"", ""slots"": [{""type"": ""weather_descriptor"", ""value"": ""temperature""}]}","```json
+{
+  ""intent"": ""alarm_set"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""weather_query"", ""slots"": [{""type"": ""weather_descriptor"", ""value"": ""temperature""}]}",True
+8825,calendar,send me a reminder of my meeting with tom next friday,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""event_name"", ""value"": ""meeting""}, {""type"": ""person"", ""value"": ""tom""}, {""type"": ""date"", ""value"": ""friday""}]}","```json
+{
+  ""intent"": ""alarm_set"",
+  ""slots"": [
+    {
+      ""type"": ""date"",
+      ""value"": ""next Friday""
+    },
+    {
+      ""type"": ""person"",
+      ""value"": ""tom""
+    }
+  ]
+}
+```",False,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""event_name"", ""value"": ""meeting""}, {""type"": ""person"", ""value"": ""tom""}, {""type"": ""date"", ""value"": ""friday""}]}",True
+7100,calendar,remind me the day before my car is due,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""date"", ""value"": ""day before""}, {""type"": ""event_name"", ""value"": ""car""}]}","```json
+{
+  ""intent"": ""alarm_remove"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""event_name"", ""value"": ""car""}]}",False
+5623,alarm,alarm ten am,"{""intent"": ""alarm_set"", ""slots"": [{""type"": ""time"", ""value"": ""ten am""}]}","```json
+{
+  ""intent"": ""alarm_query"",
+  ""slots"": [
+    {
+      ""type"": ""alarm_type"",
+      ""value"": ""ten""
+    },
+    {
+      ""type"": ""app_name"",
+      ""value"": ""alarm""
+    }
+  ]
+}
+```",False,"{""intent"": ""alarm_set"", ""slots"": [{""type"": ""time"", ""value"": ""ten am""}]}",True
+8388,calendar,i want to do laundry at eight p. m. create reminder,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""time"", ""value"": ""eight p. m.""}]}","```json
+{
+  ""intent"": ""alarm_set"",
+  ""slots"": [
+    {
+      ""type"": ""date"",
+      ""value"": ""8pm""
+    },
+    {
+      ""type"": ""time"",
+      ""value"": ""1900""
+    }
+  ]
+}
+```",False,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""event_name"", ""value"": ""laundry""}, {""type"": ""time"", ""value"": ""eight p. m.""}]}",False
+7693,calendar,do i have anything planned for the twenty first,"{""intent"": ""calendar_query"", ""slots"": [{""type"": ""date"", ""value"": ""twenty first""}]}","```json
+{
+  ""intent"": ""alarm_set"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""calendar_query"", ""slots"": [{""type"": ""date"", ""value"": ""twenty first""}]}",True
+12166,transport,book my train ticket from las vegas to los angeles,"{""intent"": ""transport_ticket"", ""slots"": [{""type"": ""transport_type"", ""value"": ""train""}, {""type"": ""place_name"", ""value"": ""las vegas""}, {""type"": ""place_name"", ""value"": ""los angeles""}]}","```json
+{
+  ""intent"": ""transport_query"",
+  ""slots"": [
+    {
+      ""type"": ""date"",
+      ""value"": ""2023-10-05""
+    },
+    {
+      ""type"": ""time"",
+      ""value"": ""14:30""
+    }
+  ]
+}
+```",False,"{""intent"": ""transport_ticket"", ""slots"": [{""type"": ""transport_type"", ""value"": ""train""}, {""type"": ""place_name"", ""value"": ""las vegas""}, {""type"": ""place_name"", ""value"": ""los angeles""}]}",True
+8058,calendar,do i have a sales meeting today,"{""intent"": ""calendar_query"", ""slots"": [{""type"": ""event_name"", ""value"": ""sales meeting""}, {""type"": ""date"", ""value"": ""today""}]}","```json
+{
+  ""intent"": ""sales_meeting"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""calendar_query"", ""slots"": [{""type"": ""event_name"", ""value"": ""sales meeting""}, {""type"": ""date"", ""value"": ""today""}]}",True
+4212,weather,am i going to be able to mow the grass this evening,"{""intent"": ""weather_query"", ""slots"": [{""type"": ""weather_descriptor"", ""value"": ""mow the grass""}, {""type"": ""timeofday"", ""value"": ""this evening""}]}","```json
+{
+  ""intent"": ""alarm_set"",
+  ""slots"": [
+    {
+      ""type"": ""date"",
+      ""value"": ""2023-10-05""
+    },
+    {
+      ""type"": ""time"",
+      ""value"": ""18:00""
+    }
+  ]
+}
+```",False,"{""intent"": ""calendar_query"", ""slots"": [{""type"": ""event_name"", ""value"": ""mow the grass""}, {""type"": ""timeofday"", ""value"": ""this evening""}]}",False
+6798,calendar,remove my next event,"{""intent"": ""calendar_remove"", ""slots"": []}","```json
+{
+  ""intent"": ""alarm_remove"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""calendar_remove"", ""slots"": []}",True
+13178,calendar,remind me to contact old friends that i have not talked with in six months before they pass,"{""intent"": ""calendar_set"", ""slots"": []}","```json
+{
+  ""intent"": ""alarm_remove"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""event_name"", ""value"": ""contact old friends""}, {""type"": ""time"", ""value"": ""six months""}]}",False
+6370,calendar,what's my upcoming week look like,"{""intent"": ""calendar_query"", ""slots"": [{""type"": ""date"", ""value"": ""upcoming week""}]}","```json
+{
+  ""intent"": ""calendar_set"",
+  ""slots"": [
+    {
+      ""type"": ""date"",
+      ""value"": ""2023-10-05""
+    },
+    {
+      ""type"": ""time"",
+      ""value"": ""17:00""
+    }
+  ]
+}
+```",False,"{""intent"": ""calendar_query"", ""slots"": [{""type"": ""date"", ""value"": ""week""}]}",False
+12835,transport,what time does the train to place leave,"{""intent"": ""transport_query"", ""slots"": [{""type"": ""transport_type"", ""value"": ""train""}]}","```json
+{
+  ""intent"": ""transport_query"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""transport_query"", ""slots"": [{""type"": ""transport_type"", ""value"": ""train""}]}",True
+8635,calendar,can you remind me to order the turkey three weeks before thanksgiving,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""event_name"", ""value"": ""order the turkey""}]}","```json
+{
+  ""intent"": ""transport_query"",
+  ""slots"": [
+    {
+      ""type"": ""time"",
+      ""value"": ""three weeks""
+    }
+  ]
+}
+```",False,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""event_name"", ""value"": ""order the turkey""}, {""type"": ""date"", ""value"": ""three weeks before thanksgiving""}]}",False
+6785,calendar,what is my next reminder,"{""intent"": ""calendar_query"", ""slots"": []}","```json
+{
+  ""intent"": ""alarm_set"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""calendar_query"", ""slots"": []}",True
+8925,calendar,delete all the events in my calendar,"{""intent"": ""calendar_remove"", ""slots"": []}","```json
+{
+  ""intent"": ""calendar_remove"",
+  ""slots"": []
+}
+```",True,"{""intent"": ""calendar_remove"", ""slots"": []}",True
+7908,calendar,do i need to do anything today,"{""intent"": ""calendar_query"", ""slots"": [{""type"": ""date"", ""value"": ""today""}]}","```json
+{
+  ""intent"": ""alarm_query"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""calendar_query"", ""slots"": [{""type"": ""date"", ""value"": ""today""}]}",True
+8916,calendar,what is my schedule for the day,"{""intent"": ""calendar_query"", ""slots"": [{""type"": ""date"", ""value"": ""the day""}]}","```json
+{
+  ""intent"": ""calendar_set"",
+  ""slots"": [
+    {
+      ""type"": ""date"",
+      ""value"": ""2023-10-05""
+    },
+    {
+      ""type"": ""time"",
+      ""value"": ""14:00""
+    }
+  ]
+}
+```",False,"{""intent"": ""calendar_query"", ""slots"": [{""type"": ""date"", ""value"": ""day""}]}",False
+7712,calendar,hey olly cancel all my other meetings and calls for second march as it is jim's birthday tag it as an event in your calendar,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""date"", ""value"": ""second march""}, {""type"": ""person"", ""value"": ""jim's""}, {""type"": ""event_name"", ""value"": ""birthday""}]}","```json
+{
+  ""intent"": ""calendar_remove"",
+  ""slots"": [
+    {
+      ""type"": ""date"",
+      ""value"": ""2023-03-01""
+    },
+    {
+      ""type"": ""event_name"",
+      ""value"": ""birthday""
+    }
+  ]
+}
+```",False,"{""intent"": ""calendar_remove"", ""slots"": [{""type"": ""event_name"", ""value"": ""other meetings""}, {""type"": ""event_name"", ""value"": ""calls""}, {""type"": ""date"", ""value"": ""second march""}, {""type"": ""person"", ""value"": ""jim's""}, {""type"": ""event_name"", ""value"": ""birthday""}]}",False
+12548,transport,i need a ride home,"{""intent"": ""transport_taxi"", ""slots"": [{""type"": ""place_name"", ""value"": ""home""}]}","```json
+{
+  ""intent"": ""transport_query"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""transport_taxi"", ""slots"": [{""type"": ""place_name"", ""value"": ""home""}]}",True
+12294,transport,show me the train schedules to the metropolitan opera house,"{""intent"": ""transport_query"", ""slots"": [{""type"": ""transport_type"", ""value"": ""train""}, {""type"": ""place_name"", ""value"": ""metropolitan opera house""}]}","```json
+{
+  ""intent"": ""transport_query"",
+  ""slots"": [
+    {
+      ""type"": ""time"",
+      ""value"": ""10""
+    },
+    {
+      ""type"": ""place_name"",
+      ""value"": ""Metropolitan Opera House""
+    }
+  ]
+}
+```",False,"{""intent"": ""transport_query"", ""slots"": [{""type"": ""transport_type"", ""value"": ""train""}, {""type"": ""place_name"", ""value"": ""metropolitan opera house""}]}",True
+4121,alarm,what time have you set the alarm,"{""intent"": ""alarm_query"", ""slots"": []}","```json
+{
+  ""intent"": ""alarm_set"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""alarm_query"", ""slots"": []}",True
+8430,calendar,cancel all my appointments,"{""intent"": ""calendar_remove"", ""slots"": [{""type"": ""event_name"", ""value"": ""appointments""}]}","```json
+{
+  ""intent"": ""cancel_all_appointments"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""calendar_remove"", ""slots"": [{""type"": ""event_name"", ""value"": ""appointments""}]}",True
+8336,calendar,when is my brunch with jennifer,"{""intent"": ""calendar_query"", ""slots"": [{""type"": ""event_name"", ""value"": ""brunch""}, {""type"": ""person"", ""value"": ""jennifer""}]}","```json
+{
+  ""intent"": ""brunch_with_jennifer"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""calendar_query"", ""slots"": [{""type"": ""event_name"", ""value"": ""brunch""}, {""type"": ""person"", ""value"": ""jennifer""}]}",True
+2679,weather,will the temperature stay about the same or is it going to get colder,"{""intent"": ""weather_query"", ""slots"": [{""type"": ""weather_descriptor"", ""value"": ""temperature""}]}","```json
+{
+  ""intent"": ""alarm_set"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""weather_query"", ""slots"": [{""type"": ""weather_descriptor"", ""value"": ""temperature""}, {""type"": ""weather_descriptor"", ""value"": ""colder""}]}",False
+1401,weather,i occasionally pay attention,"{""intent"": ""weather_query"", ""slots"": []}","```json
+{
+  ""intent"": ""alarm_query"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""calendar_set"", ""slots"": []}",False
+3398,alarm,please set my alarm for five p. m.,"{""intent"": ""alarm_set"", ""slots"": [{""type"": ""time"", ""value"": ""five p. m.""}]}","```json
+{
+  ""intent"": ""alarm_set"",
+  ""slots"": [
+    {
+      ""type"": ""date"",
+      ""value"": ""5pm""
+    }
+  ]
+}
+```",False,"{""intent"": ""alarm_set"", ""slots"": [{""type"": ""time"", ""value"": ""five p. m.""}]}",True
+4377,weather,what's the current weather,"{""intent"": ""weather_query"", ""slots"": []}","```json
+{
+  ""intent"": ""weather_query"",
+  ""slots"": []
+}
+```",True,"{""intent"": ""weather_query"", ""slots"": []}",True
+9182,calendar,cancel my plans to pick up my parents from the airport,"{""intent"": ""calendar_remove"", ""slots"": [{""type"": ""event_name"", ""value"": ""pick up my parents""}, {""type"": ""place_name"", ""value"": ""airport""}]}","```json
+{
+  ""intent"": ""transport_query"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""calendar_remove"", ""slots"": [{""type"": ""relation"", ""value"": ""parents""}, {""type"": ""place_name"", ""value"": ""airport""}]}",False
+12745,transport,book an uber to pick me up now,"{""intent"": ""transport_taxi"", ""slots"": [{""type"": ""transport_agency"", ""value"": ""uber""}]}","```json
+{
+  ""intent"": ""transport_query"",
+  ""slots"": [
+    {
+      ""type"": ""time"",
+      ""value"": ""now""
+    },
+    {
+      ""type"": ""person"",
+      ""value"": ""pickup""
+    }
+  ]
+}
+```",False,"{""intent"": ""transport_taxi"", ""slots"": [{""type"": ""transport_agency"", ""value"": ""uber""}]}",True
+12724,transport,find me a train ticket to boston,"{""intent"": ""transport_ticket"", ""slots"": [{""type"": ""transport_type"", ""value"": ""train""}, {""type"": ""place_name"", ""value"": ""boston""}]}","```json
+{
+  ""intent"": ""transport_query"",
+  ""slots"": [
+    {
+      ""type"": ""date"",
+      ""value"": ""2023-10-05""
+    },
+    {
+      ""type"": ""time"",
+      ""value"": ""14:30""
+    }
+  ]
+}
+```",False,"{""intent"": ""transport_ticket"", ""slots"": [{""type"": ""transport_type"", ""value"": ""train""}, {""type"": ""place_name"", ""value"": ""boston""}]}",True
+8990,calendar,make event,"{""intent"": ""calendar_set"", ""slots"": []}","```json
+{
+  ""intent"": ""event"",
+  ""slots"": [
+    {
+      ""type"": ""time"",
+      ""value"": ""2023-10-05T14:00:00""
+    },
+    {
+      ""type"": ""person"",
+      ""value"": ""John Doe""
+    }
+  ]
+}
+```",False,"{""intent"": ""calendar_set"", ""slots"": []}",True
+1683,weather,tomorrow's temperature is to be hot yes or no,"{""intent"": ""weather_query"", ""slots"": [{""type"": ""date"", ""value"": ""tomorrow's""}, {""type"": ""weather_descriptor"", ""value"": ""temperature""}, {""type"": ""weather_descriptor"", ""value"": ""hot""}]}","```json
+{
+  ""intent"": ""temperature"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""weather_query"", ""slots"": [{""type"": ""date"", ""value"": ""tomorrow's""}, {""type"": ""weather_descriptor"", ""value"": ""temperature""}, {""type"": ""weather_descriptor"", ""value"": ""hot""}]}",True
+7613,calendar,what's was the upcoming event,"{""intent"": ""calendar_query"", ""slots"": []}","```json
+{
+  ""intent"": ""event"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""calendar_query"", ""slots"": []}",True
+7596,calendar,please schedule a meeting with derrick in haysi at noon,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""event_name"", ""value"": ""meeting""}, {""type"": ""person"", ""value"": ""derrick""}, {""type"": ""place_name"", ""value"": ""haysi""}, {""type"": ""timeofday"", ""value"": ""noon""}]}","```json
+{
+  ""intent"": ""transport_query"",
+  ""slots"": [
+    {
+      ""type"": ""date"",
+      ""value"": ""2023-10-05T12:00:00""
+    },
+    {
+      ""type"": ""person"",
+      ""value"": ""derrick""
+    }
+  ]
+}
+```",False,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""event_name"", ""value"": ""meeting""}, {""type"": ""person"", ""value"": ""derrick""}, {""type"": ""place_name"", ""value"": ""haysi""}, {""type"": ""timeofday"", ""value"": ""noon""}]}",True
+9156,calendar,remind,"{""intent"": ""calendar_set"", ""slots"": []}","```json
+{
+  ""intent"": ""alarm_remind"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""calendar_set"", ""slots"": []}",True
+8126,calendar,schedule a meeting event in my calendar,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""event_name"", ""value"": ""meeting""}]}","```json
+{
+  ""intent"": ""calendar_set"",
+  ""slots"": [
+    {
+      ""type"": ""date"",
+      ""value"": ""2023-10-05""
+    },
+    {
+      ""type"": ""event_name"",
+      ""value"": ""Meeting""
+    }
+  ]
+}
+```",False,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""event_name"", ""value"": ""meeting""}]}",True
+8553,calendar,add a meeting to my calendar for nine am with tom,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""event_name"", ""value"": ""meeting""}, {""type"": ""time"", ""value"": ""nine am""}, {""type"": ""person"", ""value"": ""tom""}]}","```json
+{
+  ""intent"": ""calendar_set"",
+  ""slots"": [
+    {
+      ""type"": ""date"",
+      ""value"": ""9am""
+    },
+    {
+      ""type"": ""person"",
+      ""value"": ""tom""
+    }
+  ]
+}
+```",False,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""event_name"", ""value"": ""meeting""}, {""type"": ""time"", ""value"": ""nine am""}, {""type"": ""person"", ""value"": ""tom""}]}",True
+6722,calendar,is there anything i should be reminded about,"{""intent"": ""calendar_query"", ""slots"": []}","```json
+{
+  ""intent"": ""alarm_reminder"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""calendar_query"", ""slots"": []}",True
+8732,calendar,delete all dates,"{""intent"": ""calendar_remove"", ""slots"": []}","```json
+{
+  ""intent"": ""delete_all_dates"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""calendar_remove"", ""slots"": []}",True
+279,weather,what is today's forecast for berlin,"{""intent"": ""weather_query"", ""slots"": [{""type"": ""date"", ""value"": ""today's""}, {""type"": ""place_name"", ""value"": ""berlin""}]}","```json
+{
+  ""intent"": ""forecast"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""weather_query"", ""slots"": [{""type"": ""date"", ""value"": ""today's""}, {""type"": ""place_name"", ""value"": ""berlin""}]}",True
+3435,alarm,remove the latest alarm,"{""intent"": ""alarm_remove"", ""slots"": []}","```json
+{
+  ""intent"": ""alarm_remove"",
+  ""slots"": []
+}
+```",True,"{""intent"": ""alarm_remove"", ""slots"": []}",True
+12608,transport,schedule taxi pickup for monday at noon,"{""intent"": ""transport_taxi"", ""slots"": [{""type"": ""transport_type"", ""value"": ""taxi""}, {""type"": ""date"", ""value"": ""monday""}, {""type"": ""timeofday"", ""value"": ""noon""}]}","```json
+{
+  ""intent"": ""transport_taxi"",
+  ""slots"": [
+    {
+      ""type"": ""date"",
+      ""value"": ""monday""
+    },
+    {
+      ""type"": ""time"",
+      ""value"": ""noon""
+    }
+  ]
+}
+```",False,"{""intent"": ""transport_taxi"", ""slots"": [{""type"": ""transport_type"", ""value"": ""taxi""}, {""type"": ""date"", ""value"": ""monday""}, {""type"": ""timeofday"", ""value"": ""noon""}]}",True
+12381,transport,book a train ticket from baltimore maryland to new york new york,"{""intent"": ""transport_ticket"", ""slots"": [{""type"": ""transport_type"", ""value"": ""train""}, {""type"": ""place_name"", ""value"": ""baltimore maryland""}, {""type"": ""place_name"", ""value"": ""new york new york""}]}","```json
+{
+  ""intent"": ""transport_query"",
+  ""slots"": [
+    {
+      ""type"": ""date"",
+      ""value"": ""2023-10-05""
+    },
+    {
+      ""type"": ""time"",
+      ""value"": ""14:30""
+    }
+  ]
+}
+```",False,"{""intent"": ""transport_ticket"", ""slots"": [{""type"": ""transport_type"", ""value"": ""train""}, {""type"": ""place_name"", ""value"": ""baltimore maryland""}, {""type"": ""place_name"", ""value"": ""new york new york""}]}",True
+12723,transport,buy me a ticket to boston,"{""intent"": ""transport_ticket"", ""slots"": [{""type"": ""place_name"", ""value"": ""boston""}]}","```json
+{
+  ""intent"": ""transport_ticket"",
+  ""slots"": [
+    {
+      ""type"": ""place_name"",
+      ""value"": ""Boston""
+    }
+  ]
+}
+```",True,"{""intent"": ""transport_ticket"", ""slots"": [{""type"": ""place_name"", ""value"": ""boston""}]}",True
+15305,calendar,do i have any notifications from social media,"{""intent"": ""calendar_query"", ""slots"": []}","```json
+{
+  ""intent"": ""social_media_notifications"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""calendar_query"", ""slots"": [{""type"": ""event_name"", ""value"": ""notifications""}, {""type"": ""media_type"", ""value"": ""social media""}]}",False
+12814,transport,please book a ticket form jaipur to mumbai on tuesday,"{""intent"": ""transport_ticket"", ""slots"": [{""type"": ""place_name"", ""value"": ""jaipur""}, {""type"": ""place_name"", ""value"": ""mumbai""}, {""type"": ""date"", ""value"": ""tuesday""}]}","```json
+{
+  ""intent"": ""transport_ticket"",
+  ""slots"": [
+    {
+      ""type"": ""date"",
+      ""value"": ""2023-10-05""
+    },
+    {
+      ""type"": ""time"",
+      ""value"": ""14:00""
+    }
+  ]
+}
+```",False,"{""intent"": ""transport_ticket"", ""slots"": [{""type"": ""place_name"", ""value"": ""jaipur""}, {""type"": ""place_name"", ""value"": ""mumbai""}, {""type"": ""date"", ""value"": ""tuesday""}]}",True
+7946,calendar,what are the upcoming concerts in dallas,"{""intent"": ""calendar_query"", ""slots"": [{""type"": ""place_name"", ""value"": ""dallas""}]}","```json
+{
+  ""intent"": ""concerts"",
+  ""slots"": [
+    {
+      ""type"": ""date"",
+      ""value"": ""upcoming""
+    },
+    {
+      ""type"": ""list_name"",
+      ""value"": [""concert""]
+    }
+  ]
+}
+```",False,"{""intent"": ""calendar_query"", ""slots"": [{""type"": ""event_name"", ""value"": ""concerts""}, {""type"": ""place_name"", ""value"": ""dallas""}]}",False
+4439,weather,how is the weather in san francisco,"{""intent"": ""weather_query"", ""slots"": [{""type"": ""place_name"", ""value"": ""san francisco""}]}","```json
+{
+  ""intent"": ""weather_query"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""weather_query"", ""slots"": [{""type"": ""place_name"", ""value"": ""san francisco""}]}",True
+12437,transport,what is the commute time to the theater,"{""intent"": ""transport_query"", ""slots"": [{""type"": ""place_name"", ""value"": ""theater""}]}","```json
+{
+  ""intent"": ""transport_query"",
+  ""slots"": [
+    {
+      ""type"": ""time"",
+      ""value"": ""commute""
+    },
+    {
+      ""type"": ""place_name"",
+      ""value"": ""theater""
+    }
+  ]
+}
+```",False,"{""intent"": ""transport_query"", ""slots"": [{""type"": ""place_name"", ""value"": ""theater""}]}",True
+63,alarm,tell me about my alarms,"{""intent"": ""alarm_query"", ""slots"": []}","```json
+{
+  ""intent"": ""alarm_query"",
+  ""slots"": []
+}
+```",True,"{""intent"": ""alarm_query"", ""slots"": []}",True
+12162,transport,can you book a train ticket,"{""intent"": ""transport_ticket"", ""slots"": [{""type"": ""transport_type"", ""value"": ""train""}]}","```json
+{
+  ""intent"": ""transport_ticket"",
+  ""slots"": [
+    {
+      ""type"": ""time"",
+      ""value"": ""12:00""
+    },
+    {
+      ""type"": ""person"",
+      ""value"": ""you""
+    }
+  ]
+}
+```",False,"{""intent"": ""transport_ticket"", ""slots"": [{""type"": ""transport_type"", ""value"": ""train""}]}",True
+8390,calendar,remind me of my meeting on,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""event_name"", ""value"": ""meeting""}]}","```json
+{
+  ""intent"": ""alarm_set"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""event_name"", ""value"": ""meeting""}]}",True
+4917,weather,temperature outside,"{""intent"": ""weather_query"", ""slots"": [{""type"": ""weather_descriptor"", ""value"": ""temperature""}]}","```json
+{
+  ""intent"": ""alarm_set"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""weather_query"", ""slots"": [{""type"": ""weather_descriptor"", ""value"": ""temperature""}]}",True
+8415,calendar,add a meeting at the office with brian for three p. m. on tuesday,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""event_name"", ""value"": ""meeting""}, {""type"": ""place_name"", ""value"": ""office""}, {""type"": ""person"", ""value"": ""brian""}, {""type"": ""time"", ""value"": ""three p. m.""}, {""type"": ""date"", ""value"": ""tuesday""}]}","```json
+{
+  ""intent"": ""transport_query"",
+  ""slots"": [
+    {
+      ""type"": ""date"",
+      ""value"": ""tuesday""
+    },
+    {
+      ""type"": ""person"",
+      ""value"": ""brian""
+    }
+  ]
+}
+```",False,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""event_name"", ""value"": ""meeting""}, {""type"": ""place_name"", ""value"": ""office""}, {""type"": ""person"", ""value"": ""brian""}, {""type"": ""time"", ""value"": ""three p. m.""}, {""type"": ""date"", ""value"": ""tuesday""}]}",True
+3305,weather,what is the weather this week for miami,"{""intent"": ""weather_query"", ""slots"": [{""type"": ""date"", ""value"": ""this week""}, {""type"": ""place_name"", ""value"": ""miami""}]}","```json
+{
+  ""intent"": ""weather_query"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""weather_query"", ""slots"": [{""type"": ""date"", ""value"": ""this week""}, {""type"": ""place_name"", ""value"": ""miami""}]}",True
+6994,calendar,remind me at,"{""intent"": ""calendar_set"", ""slots"": []}","```json
+{
+  ""intent"": ""alarm_remind"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""calendar_set"", ""slots"": []}",True
+9030,calendar,remove from calendar my medical appointment for today,"{""intent"": ""calendar_remove"", ""slots"": [{""type"": ""event_name"", ""value"": ""medical appointment""}, {""type"": ""date"", ""value"": ""today""}]}","```json
+{
+  ""intent"": ""calendar_remove"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""calendar_remove"", ""slots"": [{""type"": ""event_name"", ""value"": ""medical appointment""}, {""type"": ""date"", ""value"": ""today""}]}",True
+12824,transport,list all train times to ny,"{""intent"": ""transport_query"", ""slots"": [{""type"": ""transport_type"", ""value"": ""train""}, {""type"": ""place_name"", ""value"": ""ny""}]}","```json
+{
+  ""intent"": ""transport_query"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""transport_query"", ""slots"": [{""type"": ""transport_type"", ""value"": ""train""}, {""type"": ""place_name"", ""value"": ""ny""}]}",True
+9193,calendar,please set this date to repeat,"{""intent"": ""calendar_set"", ""slots"": []}","```json
+{
+  ""intent"": ""alarm_set"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""event_name"", ""value"": ""repeat""}]}",False
+7557,calendar,make a reminder of location a on calendar,"{""intent"": ""calendar_set"", ""slots"": []}","```json
+{
+  ""intent"": ""calendar_reminder"",
+  ""slots"": [
+    {
+      ""type"": ""location"",
+      ""value"": ""a""
+    },
+    {
+      ""type"": ""date"",
+      ""value"": ""on""
+    }
+  ]
+}
+```",False,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""event_name"", ""value"": ""a""}]}",False
+4487,weather,will it be raining on thursday,"{""intent"": ""weather_query"", ""slots"": [{""type"": ""weather_descriptor"", ""value"": ""raining""}, {""type"": ""date"", ""value"": ""thursday""}]}","```json
+{
+  ""intent"": ""weather_query"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""weather_query"", ""slots"": [{""type"": ""date"", ""value"": ""thursday""}]}",False
+8640,calendar,i want to make a note on my calendar for the event tomorrow at the library,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""date"", ""value"": ""tomorrow""}, {""type"": ""place_name"", ""value"": ""the library""}]}","```json
+{
+  ""intent"": ""calendar_set"",
+  ""slots"": [
+    {
+      ""type"": ""date"",
+      ""value"": ""tomorrow""
+    },
+    {
+      ""type"": ""event_name"",
+      ""value"": ""library event""
+    }
+  ]
+}
+```",False,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""date"", ""value"": ""tomorrow""}, {""type"": ""place_name"", ""value"": ""library""}]}",False
+8562,calendar,delete my meeting for two o'clock p. m. today,"{""intent"": ""calendar_remove"", ""slots"": [{""type"": ""event_name"", ""value"": ""meeting""}, {""type"": ""time"", ""value"": ""two o'clock p. m.""}]}","```json
+{
+  ""intent"": ""transport_query"",
+  ""slots"": [
+    {
+      ""type"": ""date"",
+      ""value"": ""2023-10-05T14:00:00""
+    },
+    {
+      ""type"": ""time"",
+      ""value"": ""14:00""
+    }
+  ]
+}
+```",False,"{""intent"": ""calendar_remove"", ""slots"": [{""type"": ""event_name"", ""value"": ""meeting""}, {""type"": ""time"", ""value"": ""two o'clock p. m.""}, {""type"": ""date"", ""value"": ""today""}]}",False
+0,alarm,wake me up at five am this week,"{""intent"": ""alarm_set"", ""slots"": [{""type"": ""time"", ""value"": ""five am""}, {""type"": ""date"", ""value"": ""this week""}]}","```json
+{
+  ""intent"": ""alarm_set"",
+  ""slots"": [
+    {
+      ""type"": ""date"",
+      ""value"": ""2023-10-05""
+    },
+    {
+      ""type"": ""time"",
+      ""value"": ""05:00""
+    }
+  ]
+}
+```",False,"{""intent"": ""alarm_set"", ""slots"": [{""type"": ""time"", ""value"": ""five am""}, {""type"": ""date"", ""value"": ""this week""}]}",True
+7152,calendar,set lunch every day at twelve thirty,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""meal_type"", ""value"": ""lunch""}, {""type"": ""general_frequency"", ""value"": ""every day""}, {""type"": ""time"", ""value"": ""twelve thirty""}]}","```json
+{
+  ""intent"": ""alarm_set"",
+  ""slots"": [
+    {
+      ""type"": ""date"",
+      ""value"": ""every day""
+    },
+    {
+      ""type"": ""time"",
+      ""value"": ""twelve thirty""
+    }
+  ]
+}
+```",False,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""meal_type"", ""value"": ""lunch""}, {""type"": ""general_frequency"", ""value"": ""every day""}, {""type"": ""time"", ""value"": ""twelve thirty""}]}",True
+8289,calendar,set a reminder about todays faculty meeting at four,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""date"", ""value"": ""todays""}, {""type"": ""event_name"", ""value"": ""faculty meeting""}, {""type"": ""time"", ""value"": ""four""}]}","```json
+{
+  ""intent"": ""alarm_set"",
+  ""slots"": [
+    {
+      ""type"": ""date"",
+      ""value"": ""today""
+    },
+    {
+      ""type"": ""time"",
+      ""value"": ""14:00""
+    }
+  ]
+}
+```",False,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""date"", ""value"": ""todays""}, {""type"": ""event_name"", ""value"": ""faculty meeting""}, {""type"": ""time"", ""value"": ""four""}]}",True
+430,weather,what is the weather like right now,"{""intent"": ""weather_query"", ""slots"": []}","```json
+{
+  ""intent"": ""weather_query"",
+  ""slots"": []
+}
+```",True,"{""intent"": ""weather_query"", ""slots"": []}",True
+9088,calendar,wipe everything on my calendar,"{""intent"": ""calendar_remove"", ""slots"": []}","```json
+{
+  ""intent"": ""calendar_remove"",
+  ""slots"": []
+}
+```",True,"{""intent"": ""calendar_remove"", ""slots"": []}",True
+7500,calendar,can you delete the next event,"{""intent"": ""calendar_remove"", ""slots"": []}","```json
+{
+  ""intent"": ""calendar_remove"",
+  ""slots"": []
+}
+```",True,"{""intent"": ""calendar_remove"", ""slots"": []}",True
+7046,calendar,add tal meeting on twenty first at seven,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""event_name"", ""value"": ""tal meeting""}, {""type"": ""date"", ""value"": ""twenty first""}, {""type"": ""time"", ""value"": ""seven""}]}","```json
+{
+  ""intent"": ""alarm_set"",
+  ""slots"": [
+    {
+      ""type"": ""date"",
+      ""value"": ""twenty-first""
+    },
+    {
+      ""type"": ""time"",
+      ""value"": ""seven""
+    }
+  ]
+}
+```",False,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""event_name"", ""value"": ""tal meeting""}, {""type"": ""date"", ""value"": ""twenty first""}, {""type"": ""time"", ""value"": ""seven""}]}",True
+6151,weather,i want to know today's weather,"{""intent"": ""weather_query"", ""slots"": [{""type"": ""date"", ""value"": ""today's""}]}","```json
+{
+  ""intent"": ""weather_query"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""weather_query"", ""slots"": [{""type"": ""date"", ""value"": ""today's""}]}",True
+1635,alarm,what times do my alarms go off,"{""intent"": ""alarm_query"", ""slots"": []}","```json
+{
+  ""intent"": ""alarm_query"",
+  ""slots"": []
+}
+```",True,"{""intent"": ""alarm_query"", ""slots"": []}",True
+6162,alarm,delete alarm,"{""intent"": ""alarm_remove"", ""slots"": []}","```json
+{
+  ""intent"": ""alarm_remove"",
+  ""slots"": []
+}
+```",True,"{""intent"": ""alarm_remove"", ""slots"": []}",True
+12252,transport,what time are the trains going to chennai leaving,"{""intent"": ""transport_query"", ""slots"": [{""type"": ""place_name"", ""value"": ""chennai""}]}","```json
+{
+  ""intent"": ""transport_query"",
+  ""slots"": [
+    {
+      ""type"": ""time"",
+      ""value"": ""14:00""
+    }
+  ]
+}
+```",False,"{""intent"": ""transport_query"", ""slots"": [{""type"": ""place_name"", ""value"": ""chennai""}]}",True
+12604,transport,how do i book a train ticket online,"{""intent"": ""transport_query"", ""slots"": [{""type"": ""transport_type"", ""value"": ""train""}]}","```json
+{
+  ""intent"": ""transport_ticket"",
+  ""slots"": [
+    {
+      ""type"": ""time"",
+      ""value"": ""12:00""
+    },
+    {
+      ""type"": ""person"",
+      ""value"": ""customer""
+    }
+  ]
+}
+```",False,"{""intent"": ""transport_ticket"", ""slots"": [{""type"": ""transport_type"", ""value"": ""train""}]}",False
+2545,weather,how is the weather,"{""intent"": ""weather_query"", ""slots"": []}","```json
+{
+  ""intent"": ""weather_query"",
+  ""slots"": []
+}
+```",True,"{""intent"": ""weather_query"", ""slots"": []}",True
+8276,calendar,remove my next scheduled appointment please,"{""intent"": ""calendar_remove"", ""slots"": [{""type"": ""event_name"", ""value"": ""appointment""}]}","```json
+{
+  ""intent"": ""alarm_remove"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""calendar_remove"", ""slots"": [{""type"": ""event_name"", ""value"": ""appointment""}]}",True
+1862,alarm,when does my alarm go off,"{""intent"": ""alarm_query"", ""slots"": []}","```json
+{
+  ""intent"": ""alarm_query"",
+  ""slots"": []
+}
+```",True,"{""intent"": ""alarm_query"", ""slots"": []}",True
+8570,calendar,will you mark that i am busy for an event tomorrow at two p. m.,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""date"", ""value"": ""tomorrow""}, {""type"": ""time"", ""value"": ""two p. m.""}]}","```json
+{
+  ""intent"": ""alarm_set"",
+  ""slots"": [
+    {
+      ""type"": ""date"",
+      ""value"": ""tomorrow""
+    },
+    {
+      ""type"": ""time"",
+      ""value"": ""2 p. m.""
+    }
+  ]
+}
+```",False,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""event_name"", ""value"": ""busy""}, {""type"": ""date"", ""value"": ""tomorrow""}, {""type"": ""time"", ""value"": ""two p. m.""}]}",False
+3761,alarm,get me up at eight am,"{""intent"": ""alarm_set"", ""slots"": [{""type"": ""time"", ""value"": ""eight am""}]}","```json
+{
+  ""intent"": ""alarm_set"",
+  ""slots"": [
+    {
+      ""type"": ""date"",
+      ""value"": ""8""
+    },
+    {
+      ""type"": ""time"",
+      ""value"": ""08""
+    }
+  ]
+}
+```",False,"{""intent"": ""alarm_set"", ""slots"": [{""type"": ""time"", ""value"": ""eight am""}]}",True
+3829,alarm,please remove the alarm that is set for weekdays at nine,"{""intent"": ""alarm_remove"", ""slots"": [{""type"": ""date"", ""value"": ""weekdays""}, {""type"": ""time"", ""value"": ""nine""}]}","```json
+{
+  ""intent"": ""alarm_remove"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""alarm_remove"", ""slots"": [{""type"": ""date"", ""value"": ""weekdays""}, {""type"": ""time"", ""value"": ""nine""}]}",True
+8188,calendar,what date is it,"{""intent"": ""calendar_query"", ""slots"": []}","```json
+{
+  ""intent"": ""date"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""calendar_query"", ""slots"": []}",True
+8681,calendar,is it any ones birthday,"{""intent"": ""calendar_query"", ""slots"": [{""type"": ""event_name"", ""value"": ""birthday""}]}","```json
+{
+  ""intent"": ""alarm_query"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""calendar_query"", ""slots"": [{""type"": ""event_name"", ""value"": ""birthday""}]}",True
+4614,weather,will the temperature be higher than forty tomorrow,"{""intent"": ""weather_query"", ""slots"": [{""type"": ""weather_descriptor"", ""value"": ""temperature""}, {""type"": ""weather_descriptor"", ""value"": ""higher than forty""}, {""type"": ""date"", ""value"": ""tomorrow""}]}","```json
+{
+  ""intent"": ""alarm_set"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""weather_query"", ""slots"": [{""type"": ""weather_descriptor"", ""value"": ""temperature""}, {""type"": ""date"", ""value"": ""tomorrow""}]}",False
+12213,transport,get city cab here to airport,"{""intent"": ""transport_taxi"", ""slots"": [{""type"": ""transport_type"", ""value"": ""cab""}, {""type"": ""place_name"", ""value"": ""airport""}]}","```json
+{
+  ""intent"": ""transport_query"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""transport_taxi"", ""slots"": [{""type"": ""transport_type"", ""value"": ""cab""}, {""type"": ""place_name"", ""value"": ""airport""}]}",True
+8541,calendar,remind me please,"{""intent"": ""calendar_set"", ""slots"": []}","```json
+{
+  ""intent"": ""alarm_remind"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""calendar_set"", ""slots"": []}",True
+7890,calendar,clear haircut today,"{""intent"": ""calendar_remove"", ""slots"": [{""type"": ""event_name"", ""value"": ""haircut""}, {""type"": ""date"", ""value"": ""today""}]}","```json
+{
+  ""intent"": ""clear_haircut"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""calendar_remove"", ""slots"": [{""type"": ""event_name"", ""value"": ""haircut""}, {""type"": ""date"", ""value"": ""today""}]}",True
+12254,transport,tell me about city traffic,"{""intent"": ""transport_traffic"", ""slots"": [{""type"": ""place_name"", ""value"": ""city""}]}","```json
+{
+  ""intent"": ""transport_traffic"",
+  ""slots"": []
+}
+```",False,"{""intent"": ""transport_traffic"", ""slots"": []}",False
+8985,calendar,ok google delete eric's b. day from the calendar,"{""intent"": ""calendar_remove"", ""slots"": [{""type"": ""event_name"", ""value"": ""eric's b. day""}]}","```json
+{
+  ""intent"": ""calendar_remove"",
+  ""slots"": [
+    {
+      ""type"": ""date"",
+      ""value"": ""b. day""
+    }
+  ]
+}
+```",False,"{""intent"": ""calendar_remove"", ""slots"": [{""type"": ""person"", ""value"": ""eric's""}, {""type"": ""date"", ""value"": ""b. day""}]}",False
+5365,alarm,set alarm six am,"{""intent"": ""alarm_set"", ""slots"": [{""type"": ""time"", ""value"": ""six am""}]}","```json
+{
+  ""intent"": ""alarm_set"",
+  ""slots"": [
+    {
+      ""type"": ""date"",
+      ""value"": ""six am""
+    }
+  ]
+}
+```",False,"{""intent"": ""alarm_set"", ""slots"": [{""type"": ""time"", ""value"": ""six am""}]}",True
+7080,calendar,cancel everything on my calendar,"{""intent"": ""calendar_remove"", ""slots"": []}","```json
+{
+  ""intent"": ""calendar_remove"",
+  ""slots"": []
+}
+```",True,"{""intent"": ""calendar_remove"", ""slots"": []}",True
+12150,transport,olly book me a ticket to paris on eurostar this weekend,"{""intent"": ""transport_ticket"", ""slots"": [{""type"": ""place_name"", ""value"": ""paris""}, {""type"": ""transport_name"", ""value"": ""eurostar""}, {""type"": ""date"", ""value"": ""this weekend""}]}","```json
+{
+  ""intent"": ""transport_ticket"",
+  ""slots"": [
+    {
+      ""type"": ""date"",
+      ""value"": ""this weekend""
+    },
+    {
+      ""type"": ""time"",
+      ""value"": ""14:00""
+    }
+  ]
+}
+```",False,"{""intent"": ""transport_ticket"", ""slots"": [{""type"": ""place_name"", ""value"": ""paris""}, {""type"": ""transport_type"", ""value"": ""eurostar""}, {""type"": ""date"", ""value"": ""this weekend""}]}",False
+8992,calendar,show meetings,"{""intent"": ""calendar_set"", ""slots"": [{""type"": ""event_name"", ""value"": ""meetings""}]}","```json
+{
+  ""intent"": ""calendar_set"",
+  ""slots"": [
+    {
+      ""type"": ""date"",
+      ""value"": """"
+    },
+    {
+      ""type"": ""time"",
+      ""value"": """"
+    }
+  ]
+}
+```",False,"{""intent"": ""calendar_query"", ""slots"": [{""type"": ""event_name"", ""value"": ""meetings""}]}",False
