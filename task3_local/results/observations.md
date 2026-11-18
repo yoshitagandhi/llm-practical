@@ -1,4 +1,4 @@
-# Task 3 – quality scores and observations (DRAFT – review and reword)
+# Task 3 – quality scores and observations
 
 Model: Qwen2.5-1.5B-Instruct in Ollama, CPU only (size_vram = 0).
 Settings: temperature 0, seed 42, max 256 new tokens, context 2048.
@@ -31,8 +31,8 @@ Prompt processing: fp16 about 93-97 tok/s, q4_K_M about 151-154 tok/s.
 
 ## Observations
 
-- q4_K_M was about 2x faster than fp16 at generation in every run, and used about a third of the memory (1.04 vs 3.0 GB). Generating each token means reading all the weights from memory, and q4 has about 3x fewer bytes to read. The gain is closer to 2x than 3x, probably because the CPU also has to unpack the 4-bit values.
-- Quality dropped only a little: 13/20 vs 14/20. The only score difference is prompt 4, where q4 rounded too early and got 80.04. One prompt is too little evidence to blame quantisation for it.
-- The biggest failure (prompt 7) is identical in both settings, so it is a limit of the 1.5B model, not of quantisation.
-- Outputs were the same in every run (same token counts: 789 and 719) because temperature is 0 and the seed is fixed. Speed was not: CPU speed changed by up to about 40% between runs for q4 (18.6 vs 26.3 tok/s), probably because of background load, heat and power settings on a laptop.
-- Short answers (3-30 tokens) give noisy tok/s values, so the median is more reliable than the mean.
+- q4_K_M generated text about 2× faster than fp16 in every run and used about one third as much memory (1.04 versus 3.0 GB). To create each token, the computer reads the model weights from memory. q4_K_M has about 3× fewer bytes to read, but the speed gain was closer to 2×, likely because the CPU also needs to unpack the 4-bit values.
+- The quality scores were close: 13/20 for q4_K_M and 14/20 for fp16. The only score difference was prompt 4: q4_K_M rounded too early and answered 80.04. One example is not enough to say quantisation caused this.
+- The largest mistake, on prompt 7, was the same in both settings. This points to a limitation of the 1.5B model rather than quantisation.
+- The answers were the same in every run (token counts of 789 and 719) because the temperature was 0 and the seed stayed fixed. Speed varied: q4_K_M ranged from 18.6 to 26.3 tokens per second, likely due to background activity, heat, and laptop power settings.
+- Very short answers (3–30 tokens) make speed measurements less steady, so the median is more useful than the mean.
