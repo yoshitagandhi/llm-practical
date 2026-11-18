@@ -1,3 +1,3 @@
 setting,model,prompts,mean_gen_tok_per_s,median_gen_tok_per_s,mean_prompt_tok_per_s,total_output_tokens,ollama_size_gb,ollama_size_vram_gb,peak_rss_gb
-fp16,qwen2.5:1.5b-instruct-fp16,10,8.58,9.16,95.31,789,3.0,0.0,0.04
-q4_K_M,qwen2.5:1.5b-instruct-q4_K_M,10,26.34,25.1,153.84,719,1.04,0.0,0.04
+fp16,qwen2.5:1.5b-instruct-fp16,10,8.08,8.22,92.68,789,3.0,0.0,3.07
+q4_K_M,qwen2.5:1.5b-instruct-q4_K_M,10,18.91,20.67,151.57,719,1.04,0.0,1.11

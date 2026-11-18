@@ -1,0 +1,143 @@
+{
+  "hit_rule": ">= 50% of source passage inside chunk",
+  "sizes": {
+    "small": {
+      "chunk_size_words": 100,
+      "overlap_words": 20,
+      "num_chunks": 413,
+      "recall@1": 0.6,
+      "recall@5": 0.9333333333333333,
+      "per_question": [
+        {
+          "id": 1,
+          "first_hit_rank": 1
+        },
+        {
+          "id": 2,
+          "first_hit_rank": 1
+        },
+        {
+          "id": 3,
+          "first_hit_rank": 1
+        },
+        {
+          "id": 4,
+          "first_hit_rank": 1
+        },
+        {
+          "id": 5,
+          "first_hit_rank": 1
+        },
+        {
+          "id": 6,
+          "first_hit_rank": 1
+        },
+        {
+          "id": 7,
+          "first_hit_rank": 2
+        },
+        {
+          "id": 8,
+          "first_hit_rank": 2
+        },
+        {
+          "id": 9,
+          "first_hit_rank": 2
+        },
+        {
+          "id": 10,
+          "first_hit_rank": null
+        },
+        {
+          "id": 11,
+          "first_hit_rank": 2
+        },
+        {
+          "id": 12,
+          "first_hit_rank": 2
+        },
+        {
+          "id": 13,
+          "first_hit_rank": 1
+        },
+        {
+          "id": 14,
+          "first_hit_rank": 1
+        },
+        {
+          "id": 15,
+          "first_hit_rank": 1
+        }
+      ]
+    },
+    "large": {
+      "chunk_size_words": 350,
+      "overlap_words": 70,
+      "num_chunks": 118,
+      "recall@1": 0.4666666666666667,
+      "recall@5": 0.8666666666666667,
+      "per_question": [
+        {
+          "id": 1,
+          "first_hit_rank": 4
+        },
+        {
+          "id": 2,
+          "first_hit_rank": 4
+        },
+        {
+          "id": 3,
+          "first_hit_rank": 5
+        },
+        {
+          "id": 4,
+          "first_hit_rank": 2
+        },
+        {
+          "id": 5,
+          "first_hit_rank": 1
+        },
+        {
+          "id": 6,
+          "first_hit_rank": 1
+        },
+        {
+          "id": 7,
+          "first_hit_rank": 1
+        },
+        {
+          "id": 8,
+          "first_hit_rank": 1
+        },
+        {
+          "id": 9,
+          "first_hit_rank": 1
+        },
+        {
+          "id": 10,
+          "first_hit_rank": null
+        },
+        {
+          "id": 11,
+          "first_hit_rank": 1
+        },
+        {
+          "id": 12,
+          "first_hit_rank": 3
+        },
+        {
+          "id": 13,
+          "first_hit_rank": 1
+        },
+        {
+          "id": 14,
+          "first_hit_rank": null
+        },
+        {
+          "id": 15,
+          "first_hit_rank": 4
+        }
+      ]
+    }
+  }
+}

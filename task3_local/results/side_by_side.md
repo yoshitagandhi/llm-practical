@@ -10,14 +10,14 @@ Score each output 0 (wrong / ignores instructions), 1 (partly right), 2 (correct
 **Expected:** Canberra
 
 
-**fp16** (3 tokens, 5.59 tok/s) – score: __
+**fp16** (3 tokens, 5.63 tok/s) – score: __
 
 ```
 Canberra
 ```
 
 
-**q4_K_M** (3 tokens, 40.68 tok/s) – score: __
+**q4_K_M** (3 tokens, 16.97 tok/s) – score: __
 
 ```
 Canberra
@@ -31,14 +31,14 @@ Canberra
 **Expected:** Jane Austen, 19th century (1813)
 
 
-**fp16** (23 tokens, 9.76 tok/s) – score: __
+**fp16** (23 tokens, 7.19 tok/s) – score: __
 
 ```
 Jane Austen wrote the novel "Pride and Prejudice" in the 19th century.
 ```
 
 
-**q4_K_M** (71 tokens, 24.29 tok/s) – score: __
+**q4_K_M** (71 tokens, 19.55 tok/s) – score: __
 
 ```
 The novel "Pride and Prejudice" was written by Jane Austen, a renowned English novelist. It was published in 1813. Jane Austen was a significant figure in the English literature of the 19th century, known for her witty and insightful portrayals of the social norms and class distinctions of her time.
@@ -52,14 +52,14 @@ The novel "Pride and Prejudice" was written by Jane Austen, a renowned English n
 **Expected:** Plants use light, water and CO2 to make glucose and release oxygen; exactly two sentences
 
 
-**fp16** (22 tokens, 7.75 tok/s) – score: __
+**fp16** (22 tokens, 6.96 tok/s) – score: __
 
 ```
 Photosynthesis is the process by which plants use sunlight to convert carbon dioxide and water into glucose and oxygen.
 ```
 
 
-**q4_K_M** (22 tokens, 27.85 tok/s) – score: __
+**q4_K_M** (22 tokens, 11.57 tok/s) – score: __
 
 ```
 Photosynthesis is the process by which plants convert light energy from the sun into chemical energy stored in glucose.
@@ -73,7 +73,7 @@ Photosynthesis is the process by which plants convert light energy from the sun 
 **Expected:** 80 rupees (12 / 3 = 4 groups, 4 x 20 = 80)
 
 
-**fp16** (256 tokens, 9.15 tok/s) – score: __
+**fp16** (256 tokens, 9.6 tok/s) – score: __
 
 ```
 To find out how much 12 pens cost, we can follow these steps:
@@ -95,7 +95,7 @@ So, 12 pens cost 80
 ```
 
 
-**q4_K_M** (160 tokens, 25.49 tok/s) – score: __
+**q4_K_M** (160 tokens, 23.78 tok/s) – score: __
 
 ```
 To find out how much 12 pens cost, we first need to determine the cost of one pen. Since 3 pens cost 20 rupees, we can calculate the cost of one pen by dividing 20 rupees by 3:
@@ -117,14 +117,14 @@ So, 12 pens cost 80.04 rupees.
 **Expected:** Yes, with a correct one-sentence explanation
 
 
-**fp16** (47 tokens, 9.23 tok/s) – score: __
+**fp16** (47 tokens, 8.81 tok/s) – score: __
 
 ```
 Yes, all bloops are definitely lazzies because if all bloops are razzies and all razzies are lazzies, then the set of bloops is a subset of the set of lazzies.
 ```
 
 
-**q4_K_M** (67 tokens, 24.72 tok/s) – score: __
+**q4_K_M** (67 tokens, 21.82 tok/s) – score: __
 
 ```
 Yes, all bloops are definitely lazzies. This is because if all bloops are razzies and all razzies are lazzies, then every bloop must be a razzie, and since all razzies are lazzies, it follows that every bloop is a lazzie.
@@ -138,7 +138,7 @@ Yes, all bloops are definitely lazzies. This is because if all bloops are razzie
 **Expected:** Correct function, e.g. normalise with lower() and remove spaces, compare with reverse; code only
 
 
-**fp16** (111 tokens, 9.58 tok/s) – score: __
+**fp16** (111 tokens, 9.35 tok/s) – score: __
 
 ```
 ```python
@@ -160,7 +160,7 @@ def is_palindrome(s):
 ```
 
 
-**q4_K_M** (109 tokens, 21.26 tok/s) – score: __
+**q4_K_M** (109 tokens, 23.93 tok/s) – score: __
 
 ```
 ```python
@@ -194,7 +194,7 @@ print(len(x))
 **Expected:** 4 (y and x refer to the same list)
 
 
-**fp16** (256 tokens, 9.16 tok/s) – score: __
+**fp16** (256 tokens, 9.72 tok/s) – score: __
 
 ```
 The Python code you provided will print `2`. Here's a step-by-step explanation of what happens:
@@ -225,7 +225,7 @@ Therefore, the output of the
 ```
 
 
-**q4_K_M** (221 tokens, 23.5 tok/s) – score: __
+**q4_K_M** (221 tokens, 24.6 tok/s) – score: __
 
 ```
 The Python code you provided will print `2`. Here's a step-by-step explanation of what happens:
@@ -249,7 +249,7 @@ Therefore, the output of the code will be `2`, which is the length of the list `
 **Expected:** ["red", "green", "blue"] with nothing else
 
 
-**fp16** (14 tokens, 7.57 tok/s) – score: __
+**fp16** (14 tokens, 6.27 tok/s) – score: __
 
 ```
 ```json
@@ -258,7 +258,7 @@ Therefore, the output of the code will be `2`, which is the length of the list `
 ```
 
 
-**q4_K_M** (14 tokens, 19.83 tok/s) – score: __
+**q4_K_M** (14 tokens, 12.41 tok/s) – score: __
 
 ```
 ```json
@@ -274,7 +274,7 @@ Therefore, the output of the code will be `2`, which is the length of the list `
 **Expected:** Exactly 3 bullets, each under 10 words
 
 
-**fp16** (27 tokens, 9.46 tok/s) – score: __
+**fp16** (27 tokens, 7.63 tok/s) – score: __
 
 ```
 - Sleep repairs and rejuvenates the body.
@@ -283,7 +283,7 @@ Therefore, the output of the code will be `2`, which is the length of the list `
 ```
 
 
-**q4_K_M** (25 tokens, 28.65 tok/s) – score: __
+**q4_K_M** (25 tokens, 12.72 tok/s) – score: __
 
 ```
 - Sleep repairs and rejuvenates the body.
@@ -301,14 +301,14 @@ The city council voted on Tuesday to extend the library's opening hours to 9 pm 
 **Expected:** One sentence covering: council extends library hours to 9 pm on weekdays, because students asked for evening study space, funded from events budget
 
 
-**fp16** (30 tokens, 8.57 tok/s) – score: __
+**fp16** (30 tokens, 9.61 tok/s) – score: __
 
 ```
 The city council extended the library's opening hours to 9 pm on weekdays, with the extra cost coming from a reduction in the events budget.
 ```
 
 
-**q4_K_M** (27 tokens, 27.14 tok/s) – score: __
+**q4_K_M** (27 tokens, 21.79 tok/s) – score: __
 
 ```
 The city council voted to extend the library's weekday hours to 9 pm, with the extra cost coming from a budget shift.
